@@ -1,12 +1,47 @@
-.nav{
-    .nav-item{
-        a{
+.navbar {
+    background: $block-color;
+
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .nav-item {
+        padding-right: 1em; 
+        a {
             color: #fff;
-            &:hover{
-                color: #ffeed4;
+            font-size: 1.2em;
+            position: relative;
+
+            &::after {
+                content: '';
+                visibility: hidden;
+                width: 25%;
+                border-bottom: solid 3px rgba(255,255,255,.5);
+                position: absolute;
+                left: 50%;
+                top: 80%;
+            }
+
+            &:hover {
+                color: rgba(255,255,255,.5);
+            }
+
+            &:hover:after {
+                visibility: visible;
+            }
+
+            i {
+                padding-right: 10px;
             }
         }
-        
+        &.active a::after {
+            content: '';
+            visibility: visible;
+            width: 25%;
+            border-bottom: solid 3px #fff;
+            position: absolute;
+            left: 50%;
+            top: 80%;
+        }
     }
 }
-
