@@ -117,7 +117,7 @@ body {
 }
 
 .colour-block {
-  background: #adc5a5;
+  background: #dbe9d8;
   width: 100%;
   color: #fff;
 }
@@ -125,7 +125,7 @@ body {
 .white-block {
   background: #fff;
   width: 100%;
-  color: #adc5a5;
+  color: #dbe9d8;
 }
 
 .after-slider {
@@ -135,21 +135,15 @@ body {
 .scallop-up {
   height: 25px;
   width: 100%;
-  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#adc5a5), color-stop(0.49, #adc5a5), color-stop(0.51, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#dbe9d8), color-stop(0.49, #dbe9d8), color-stop(0.51, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   -webkit-background-size: 49px 100%;
 }
 
 .scallop-down {
   height: 25px;
   width: 100%;
-  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#adc5a5), color-stop(0.49, #adc5a5), color-stop(0.51, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
+  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#dbe9d8), color-stop(0.49, #dbe9d8), color-stop(0.51, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
   -webkit-background-size: 49px 100%;
-}
-
-.scallop-up.slider {
-  position: relative;
-  top: -25px;
-  z-index: 2;
 }
 
 .title {
@@ -159,7 +153,7 @@ body {
 .separator {
   border: 0;
   height: 3px;
-  background: #e3ae9f;
+  background: #b0aac2;
   margin: 0 auto;
   width: 20%;
 }
@@ -167,23 +161,69 @@ body {
 .separator-min {
   border: 0;
   height: 5px;
-  background: #e3ae9f;
+  background: #b0aac2;
   margin: 0 auto;
   width: 7%;
 }
 
+.carousel-caption {
+  right: auto;
+  left: 21%;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.178);
+  top: 15%;
+  border-radius: 18px;
+  bottom: auto;
+}
+
+.carousel-caption .btn {
+  border-color: #fff;
+  color: #fff;
+}
+
 .welcome {
-  background-color: antiquewhite;
+  background-color: #b0aac2;
 }
 
 .welcome .bicylke {
   max-width: 100%;
 }
 
+.zig-zag.section-separator {
+  border: none;
+  height: 40px;
+  margin: 0;
+}
+
+.zig-zag.section-separator.first {
+  background: linear-gradient(135deg, #b0aac2 25%, transparent 25%) -20px 0, linear-gradient(225deg, #b0aac2 25%, transparent 25%) -20px 0, linear-gradient(315deg, #f2efe8 25%, transparent 25%), linear-gradient(45deg, #f2efe8 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: white;
+}
+
+.zig-zag.section-separator.second {
+  background: linear-gradient(135deg, #f2efe8 25%, transparent 25%) -20px 0, linear-gradient(225deg, #f2efe8 25%, transparent 25%) -20px 0, linear-gradient(315deg, #c2d4d8 25%, transparent 25%), linear-gradient(45deg, #c2d4d8 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: white;
+}
+
+.zig-zag.section-separator.third {
+  background: linear-gradient(135deg, #c2d4d8 25%, transparent 25%) -20px 0, linear-gradient(225deg, #c2d4d8 25%, transparent 25%) -20px 0, linear-gradient(315deg, #dbe9d8 25%, transparent 25%), linear-gradient(45deg, #dbe9d8 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: white;
+}
+
+.zig-zag.section-separator.fourth {
+  background: linear-gradient(135deg, #dbe9d8 25%, transparent 25%) -20px 0, linear-gradient(225deg, #dbe9d8 25%, transparent 25%) -20px 0, linear-gradient(315deg, #dddfd4 25%, transparent 25%), linear-gradient(45deg, #dddfd4 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: white;
+}
+
 .activities {
   padding: 50px 0;
   width: 100%;
   color: #8d8080;
+  background-color: #f2efe8;
 }
 
 .activities .activity {
@@ -192,13 +232,13 @@ body {
 
 .activities .activity h5 {
   padding: 0.8em 0;
-  color: #e3ae9f;
+  color: #b0aac2;
 }
 
 .activities .activity .icon-container {
   border-radius: 50%;
   padding: 28px;
-  background-color: #adc5a5;
+  background-color: #dbe9d8;
   width: 7em;
   height: 7em;
   margin: 0 auto;
@@ -206,11 +246,11 @@ body {
 }
 
 .activities .activity .icon-container:hover {
-  background-color: white;
+  background-color: #fff;
 }
 
 .activities .activity .icon-container:hover i {
-  color: #adc5a5;
+  color: #dbe9d8;
 }
 
 .activities .activity .icon-container i {
@@ -224,7 +264,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  border: 4px dashed #adc5a5;
+  border: 4px dashed #dbe9d8;
   background: transparent;
   border-radius: 50%;
 }
@@ -232,6 +272,23 @@ body {
 .activities .activity .icon-container .border-icon:hover {
   -webkit-animation: rotate 4s linear infinite;
           animation: rotate 4s linear infinite;
+}
+
+.gallery {
+  background-color: #c2d4d8;
+}
+
+.gallery .btn-group {
+  margin-left: 20rem;
+}
+
+.gallery .img-container {
+  padding: 0.5em;
+}
+
+.gallery .img-container .img-thumbnail {
+  border: 2px solid white;
+  border-radius: 1.25rem;
 }
 
 .animate {
@@ -401,8 +458,37 @@ body {
   font-size: 56px;
 }
 
+.zig-zag.separator-transparent {
+  border: none;
+  position: relative;
+  top: -88px;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(315deg, #fff 25%, transparent 25%), linear-gradient(45deg, #fff 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: transparent;
+  z-index: 2;
+}
+
+.zig-zag.separator-after-transparent {
+  border: none;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  top: -6.5em;
+  right: 0px;
+  height: 40px;
+  background: linear-gradient(135deg, #fff 25%, transparent 25%) -20px 0, linear-gradient(225deg, #fff 25%, transparent 25%) -20px 0;
+  background-size: 40px 40px;
+  background-color: transparent;
+}
+
+.crcl {
+  background-color: #dbe9d8;
+}
+
 .navbar {
-  background: #adc5a5;
+  background: #dbe9d8;
 }
 
 .navbar .navbar-toggler {
@@ -449,5 +535,35 @@ body {
   position: absolute;
   left: 50%;
   top: 80%;
+}
+
+.zig-zag.header {
+  border: none;
+  position: relative;
+  top: -40px;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(135deg, #fff 25%, transparent 25%) -20px 0, linear-gradient(225deg, #fff 25%, transparent 25%) -20px 0, linear-gradient(315deg, rgba(255, 255, 255, 0) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0) 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: transparent;
+  z-index: 2;
+  margin: 0;
+}
+
+.zig-zag.header-transparent {
+  border: none;
+  position: relative;
+  top: -40px;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(315deg, #fff 25%, transparent 25%), linear-gradient(45deg, #fff 25%, transparent 25%);
+  background-size: 40px 40px;
+  background-color: transparent;
+  z-index: 2;
+  margin: 0;
+}
+
+footer {
+  background-color: #dddfd4;
 }
 /*# sourceMappingURL=style.css.map */
