@@ -1,61 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Kinder Garten</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ site.baseurl }}/style/style.css">
-</head>
+{% include head.html %}
 
 <body>
-    <header class=" fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="{{ site.baseurl }}/">
-                    <img src="{{ site.baseurl }}/assets/images/logo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
-                    aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarsExample07">
-                    <ul class="navbar-nav">
-                        <li class="nav-item {% if page.url == '/' %}active{% endif %}">
-                            <a class="nav-link" href="{{ site.baseurl }}/"><i class="fas fa-home"></i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ site.baseurl }}/blog"><i class="far fa-comment-alt"></i>Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ site.baseurl }}/activities"><i class="far fa-calendar-alt"></i>Activities</a>
-                        </li>
-                        <li class="nav-item {% if page.url == '/about/' %}active{% endif %}">
-                            <a class="nav-link" href="{{ site.baseurl }}/about"><i class="fas fa-info-circle"></i>About</a>
-                        </li>
-                        <li class="nav-item {% if page.url == '/contact/' %}active{% endif %}">
-                            <a class="nav-link" href="{{ site.baseurl }}/contact"><i class="fas fa-envelope"></i>Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="scallop-down slider"></div>
-    </header>
-    {{ content }}
-    <div class="scallop-up"></div>
-    <footer class="colour-block">
+    {% include header.html %}
 
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
+    {{ content }}
+    <!-- <div class="scallop-up"></div> -->
+    <hr class="zig-zag section-separator fourth">
+    {% include footer.html  %}
+    {% include scripts.html %}
 </body>
 
 </html>

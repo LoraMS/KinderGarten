@@ -1,0 +1,35 @@
+<header class=" fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/assets/images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
+                aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarsExample07">
+                <ul class="navbar-nav">
+                    <li class="nav-item {% if page.url == '/' %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.baseurl }}/"><i class="fas fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/blog"><i class="far fa-comment-alt"></i>Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ site.baseurl }}/activities"><i class="far fa-calendar-alt"></i>Activities</a>
+                    </li>
+                    <li class="nav-item {% if page.url == '/about/' %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.baseurl }}/about"><i class="fas fa-info-circle"></i>About</a>
+                    </li>
+                    <li class="nav-item {% if page.url == '/contact/' %}active{% endif %}">
+                        <a class="nav-link" href="{{ site.baseurl }}/contact"><i class="fas fa-envelope"></i>Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="scallop-down slider"></div> -->
+    <hr class="zig-zag header-transparent"/>
+    <hr class="zig-zag header"/>
+</header>
