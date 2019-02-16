@@ -1,14 +1,16 @@
 .navbar {
     background: $header-color;
+    position: relative;
 
     .navbar-toggler {
         border-color: rgba(255, 255, 255, 0.5);
     }
 
     .nav-item {
-        padding-right: 1em; 
+        padding-right: 1em;
+
         a {
-            color: #fff;
+            color: #ffffff;
             font-size: 1.2em;
             position: relative;
 
@@ -16,14 +18,14 @@
                 content: '';
                 visibility: hidden;
                 width: 25%;
-                border-bottom: solid 3px rgba(255,255,255,.5);
+                border-bottom: solid 3px rgba(255, 255, 255, .5);
                 position: absolute;
                 left: 50%;
                 top: 80%;
             }
 
             &:hover {
-                color: rgba(255,255,255,.5);
+                color: rgba(255, 255, 255, .5);
             }
 
             &:hover:after {
@@ -34,6 +36,7 @@
                 padding-right: 10px;
             }
         }
+
         &.active a::after {
             content: '';
             visibility: visible;
@@ -44,53 +47,75 @@
             top: 80%;
         }
     }
-}
 
-.zig-zag.header {
-    border: none;
-    position: relative;
-    top: -40px;
-    right: 0;
-    height: 20px;
-    // background:  linear-gradient(135deg, rgb(51, 255, 0) 25%, transparent 25%) -20px 0,
-    // linear-gradient(225deg, rgb(51, 255, 0) 25%, transparent 25%) -20px 0,
-    // linear-gradient(135deg, #a0b79b 25%, transparent 25%) -20px 0, 
-    // linear-gradient(225deg, #adc5a5 25%, transparent 25%) -20px 0;
-    background: linear-gradient(135deg, #fff 25%, transparent 25%) -20px 0, 
-    linear-gradient(225deg, #fff 25%, transparent 25%) -20px 0, 
-    linear-gradient(315deg, rgba(255, 255, 255, 0) 25%, transparent 25%), 
-    linear-gradient(45deg, rgba(255, 255, 255, 0) 25%, transparent 25%);
-    background-size: 40px 40px;
-    background-color: transparent;
-    z-index: 2;
-    margin: 0;
-}
-
-.zig-zag.header-transparent {
-    // border: none;
-    // position: relative;
-    // top: -32px;
-    // right: 4px;
-    // height: 40px;
-    // background: linear-gradient(135deg, $header-color 25%, transparent 25%) -20px 0, 
-    // linear-gradient(225deg, $header-color 25%, transparent 25%) -20px 0;
-    // background-size: 40px 40px;
-    // background-color: transparent;
-    // z-index: 2;
-        border: none;
-        position: relative;
-        top: -40px;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        left: 0;
         right: 0;
-        height: 40px;
-        background: linear-gradient(315deg, #fff 25%, transparent 25%), linear-gradient(45deg, #fff 25%, transparent 25%);
+        bottom: -1.1em;
+        height: 20px;
+        background: linear-gradient(135deg, $separator-color 25%, transparent 25%) -20px 0,
+            linear-gradient(225deg, $separator-color 25%, transparent 25%) -20px 0;
         background-size: 40px 40px;
         background-color: transparent;
         z-index: 2;
-        margin: 0;
-        // // maked with 4 linear gradients 
-        // background: linear-gradient(135deg, rgba(255, 255, 255, 01) 25%, transparent 25%) -20px 0,
-        // linear-gradient(225deg, rgba(255, 255, 255, 1) 25%, transparent 25%) -20px 0,
-        // linear-gradient(315deg, rgba(255, 255, 255, 1) 25%, transparent 25%),
-        // linear-gradient(45deg, rgba(255, 255, 255, 1) 25%, transparent 25%);
     }
-    
+
+    &:after {
+        bottom: 0;
+        height: 40px;
+        background: 
+            linear-gradient(315deg,$separator-color 25%, transparent 25%),
+        linear-gradient(45deg, $separator-color 25%, transparent 25%);
+        background-size: 40px 40px;
+    }
+}
+
+// .zig-zag.header {
+//     border: none;
+//     position: relative;
+//     top: -40px;
+//     right: 0;
+//     height: 20px;
+//     // background:  linear-gradient(135deg, rgb(51, 255, 0) 25%, transparent 25%) -20px 0,
+//     // linear-gradient(225deg, rgb(51, 255, 0) 25%, transparent 25%) -20px 0,
+//     // linear-gradient(135deg, #a0b79b 25%, transparent 25%) -20px 0, 
+//     // linear-gradient(225deg, #adc5a5 25%, transparent 25%) -20px 0;
+//     background: linear-gradient(135deg, #fff 25%, transparent 25%) -20px 0,
+//         linear-gradient(225deg, #fff 25%, transparent 25%) -20px 0,
+//         linear-gradient(315deg, rgba(255, 255, 255, 0) 25%, transparent 25%),
+//         linear-gradient(45deg, rgba(255, 255, 255, 0) 25%, transparent 25%);
+//     background-size: 40px 40px;
+//     background-color: transparent;
+//     z-index: 2;
+//     margin: 0;
+// }
+
+// .zig-zag.header-transparent {
+//     // border: none;
+//     // position: relative;
+//     // top: -32px;
+//     // right: 4px;
+//     // height: 40px;
+//     // background: linear-gradient(135deg, $header-color 25%, transparent 25%) -20px 0, 
+//     // linear-gradient(225deg, $header-color 25%, transparent 25%) -20px 0;
+//     // background-size: 40px 40px;
+//     // background-color: transparent;
+//     // z-index: 2;
+//     border: none;
+//     position: relative;
+//     top: -40px;
+//     right: 0;
+//     height: 40px;
+//     background: linear-gradient(315deg, #fff 25%, transparent 25%), linear-gradient(45deg, #fff 25%, transparent 25%);
+//     background-size: 40px 40px;
+//     background-color: transparent;
+//     z-index: 2;
+//     margin: 0;
+//     // // maked with 4 linear gradients 
+//     // background: linear-gradient(135deg, rgba(255, 255, 255, 01) 25%, transparent 25%) -20px 0,
+//     // linear-gradient(225deg, rgba(255, 255, 255, 1) 25%, transparent 25%) -20px 0,
+//     // linear-gradient(315deg, rgba(255, 255, 255, 1) 25%, transparent 25%),
+//     // linear-gradient(45deg, rgba(255, 255, 255, 1) 25%, transparent 25%);
+// }

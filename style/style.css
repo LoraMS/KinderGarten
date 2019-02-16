@@ -33,6 +33,60 @@ html {
   }
 }
 
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
 html {
   font: normal 16px/1.5 'Baloo Bhaijaan', cursive;
 }
@@ -113,64 +167,14 @@ a {
 body {
   min-height: 75rem;
   padding-top: 8.4rem;
-  color: #8d8080;
-}
-
-.colour-block {
-  background: #dbe9d8;
-  width: 100%;
-  color: #fff;
-}
-
-.white-block {
-  background: #fff;
-  width: 100%;
-  color: #dbe9d8;
-}
-
-.after-slider {
-  margin-top: -25px;
-}
-
-.scallop-up {
-  height: 25px;
-  width: 100%;
-  background: -webkit-gradient(radial, 50% 100%, 10, 50% 100%, 40, from(#dbe9d8), color-stop(0.49, #dbe9d8), color-stop(0.51, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
-  -webkit-background-size: 49px 100%;
-}
-
-.scallop-down {
-  height: 25px;
-  width: 100%;
-  background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(#dbe9d8), color-stop(0.49, #dbe9d8), color-stop(0.51, rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0)));
-  -webkit-background-size: 49px 100%;
-}
-
-.title {
-  font-size: 2rem;
-}
-
-.separator {
-  border: 0;
-  height: 3px;
-  background: #b0aac2;
-  margin: 0 auto;
-  width: 20%;
-}
-
-.separator-min {
-  border: 0;
-  height: 5px;
-  background: #b0aac2;
-  margin: 0 auto;
-  width: 7%;
+  color: #818181;
 }
 
 .carousel-caption {
   right: auto;
   left: 21%;
   padding: 30px;
-  background: rgba(0, 0, 0, 0.178);
+  background: rgba(0, 0, 0, 0.2);
   top: 15%;
   border-radius: 18px;
   bottom: auto;
@@ -182,11 +186,55 @@ body {
 }
 
 .welcome {
-  background-color: #b0aac2;
+  background-color: #c5f1ae;
+  position: relative;
+}
+
+.welcome .title {
+  font-size: 2rem;
+}
+
+.welcome .title::before {
+  content: '';
+  position: absolute;
+  top: 18%;
+  left: 47%;
+  height: 5px;
+  background: #818181;
+  margin: 0 auto;
+  width: 7%;
+}
+
+.welcome .title::after {
+  content: '';
+  position: absolute;
+  top: 19%;
+  left: 42%;
+  height: 4px;
+  background: #818181;
+  margin: 0 auto;
+  width: 17%;
+}
+
+.welcome .title::before {
+  left: 10%;
+  width: 11%;
+}
+
+.welcome .title::after {
+  left: 2%;
+  width: 28%;
 }
 
 .welcome .bicylke {
   max-width: 100%;
+}
+
+.welcome .bicylke:hover {
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .zig-zag.section-separator {
@@ -196,34 +244,61 @@ body {
 }
 
 .zig-zag.section-separator.first {
-  background: linear-gradient(135deg, #b0aac2 25%, transparent 25%) -20px 0, linear-gradient(225deg, #b0aac2 25%, transparent 25%) -20px 0, linear-gradient(315deg, #f2efe8 25%, transparent 25%), linear-gradient(45deg, #f2efe8 25%, transparent 25%);
+  background: linear-gradient(135deg, #c5f1ae 25%, transparent 25%) -20px 0, linear-gradient(225deg, #c5f1ae 25%, transparent 25%) -20px 0, linear-gradient(315deg, #c2e0ec 25%, transparent 25%), linear-gradient(45deg, #c2e0ec 25%, transparent 25%);
   background-size: 40px 40px;
-  background-color: white;
+  background-color: #ebe8e8;
 }
 
 .zig-zag.section-separator.second {
-  background: linear-gradient(135deg, #f2efe8 25%, transparent 25%) -20px 0, linear-gradient(225deg, #f2efe8 25%, transparent 25%) -20px 0, linear-gradient(315deg, #c2d4d8 25%, transparent 25%), linear-gradient(45deg, #c2d4d8 25%, transparent 25%);
+  background: linear-gradient(135deg, #c2e0ec 25%, transparent 25%) -20px 0, linear-gradient(225deg, #c2e0ec 25%, transparent 25%) -20px 0, linear-gradient(315deg, #fff0b5 25%, transparent 25%), linear-gradient(45deg, #fff0b5 25%, transparent 25%);
   background-size: 40px 40px;
-  background-color: white;
+  background-color: #ebe8e8;
 }
 
 .zig-zag.section-separator.third {
-  background: linear-gradient(135deg, #c2d4d8 25%, transparent 25%) -20px 0, linear-gradient(225deg, #c2d4d8 25%, transparent 25%) -20px 0, linear-gradient(315deg, #dbe9d8 25%, transparent 25%), linear-gradient(45deg, #dbe9d8 25%, transparent 25%);
+  background: linear-gradient(135deg, #fff0b5 25%, transparent 25%) -20px 0, linear-gradient(225deg, #fff0b5 25%, transparent 25%) -20px 0, linear-gradient(315deg, #fcd0c7 25%, transparent 25%), linear-gradient(45deg, #fcd0c7 25%, transparent 25%);
   background-size: 40px 40px;
-  background-color: white;
+  background-color: #ebe8e8;
 }
 
 .zig-zag.section-separator.fourth {
-  background: linear-gradient(135deg, #dbe9d8 25%, transparent 25%) -20px 0, linear-gradient(225deg, #dbe9d8 25%, transparent 25%) -20px 0, linear-gradient(315deg, #dddfd4 25%, transparent 25%), linear-gradient(45deg, #dddfd4 25%, transparent 25%);
+  background: linear-gradient(135deg, #fcd0c7 25%, transparent 25%) -20px 0, linear-gradient(225deg, #fcd0c7 25%, transparent 25%) -20px 0, linear-gradient(315deg, #cfcccc 25%, transparent 25%), linear-gradient(45deg, #cfcccc 25%, transparent 25%);
   background-size: 40px 40px;
-  background-color: white;
+  background-color: #ebe8e8;
 }
 
 .activities {
   padding: 50px 0;
   width: 100%;
-  color: #8d8080;
-  background-color: #f2efe8;
+  color: #818181;
+  background-color: #c2e0ec;
+  position: relative;
+}
+
+.activities .title {
+  font-size: 2rem;
+}
+
+.activities .title::before {
+  content: '';
+  position: absolute;
+  top: 18%;
+  left: 47%;
+  height: 5px;
+  background: #818181;
+  margin: 0 auto;
+  width: 7%;
+}
+
+.activities .title::after {
+  content: '';
+  position: absolute;
+  top: 19%;
+  left: 42%;
+  height: 4px;
+  background: #818181;
+  margin: 0 auto;
+  width: 17%;
 }
 
 .activities .activity {
@@ -232,13 +307,12 @@ body {
 
 .activities .activity h5 {
   padding: 0.8em 0;
-  color: #b0aac2;
 }
 
 .activities .activity .icon-container {
   border-radius: 50%;
   padding: 28px;
-  background-color: #dbe9d8;
+  background-color: #e9c19a;
   width: 7em;
   height: 7em;
   margin: 0 auto;
@@ -250,7 +324,7 @@ body {
 }
 
 .activities .activity .icon-container:hover i {
-  color: #dbe9d8;
+  color: #e9c19a;
 }
 
 .activities .activity .icon-container i {
@@ -264,7 +338,7 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  border: 4px dashed #dbe9d8;
+  border: 4px dashed #e9c19a;
   background: transparent;
   border-radius: 50%;
 }
@@ -275,11 +349,65 @@ body {
 }
 
 .gallery {
-  background-color: #c2d4d8;
+  background-color: #fff0b5;
+  padding: 50px 0;
+  position: relative;
+}
+
+.gallery .title {
+  font-size: 2rem;
+}
+
+.gallery .title::before {
+  content: '';
+  position: absolute;
+  top: 11.5%;
+  left: 47%;
+  height: 5px;
+  background: #818181;
+  margin: 0 auto;
+  width: 7%;
+}
+
+.gallery .title::after {
+  content: '';
+  position: absolute;
+  top: 12%;
+  left: 42%;
+  height: 4px;
+  background: #818181;
+  margin: 0 auto;
+  width: 17%;
+}
+
+.gallery .title::after {
+  left: 43%;
+  width: 15%;
 }
 
 .gallery .btn-group {
   margin-left: 20rem;
+  margin-top: 2rem;
+  /* Add a grey background color on mouse-over */
+  /* Add a dark background color to the active button */
+}
+
+.gallery .btn-group .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+  color: #818181;
+}
+
+.gallery .btn-group .btn:hover {
+  background-color: #ddd;
+}
+
+.gallery .btn-group .btn.active {
+  background-color: #666;
+  color: white;
 }
 
 .gallery .img-container {
@@ -464,7 +592,7 @@ body {
   top: -88px;
   right: 0;
   height: 40px;
-  background: linear-gradient(315deg, #fff 25%, transparent 25%), linear-gradient(45deg, #fff 25%, transparent 25%);
+  background: linear-gradient(315deg, #ebe8e8 25%, transparent 25%), linear-gradient(45deg, #ebe8e8 25%, transparent 25%);
   background-size: 40px 40px;
   background-color: transparent;
   z-index: 2;
@@ -478,17 +606,19 @@ body {
   top: -6.5em;
   right: 0px;
   height: 40px;
-  background: linear-gradient(135deg, #fff 25%, transparent 25%) -20px 0, linear-gradient(225deg, #fff 25%, transparent 25%) -20px 0;
+  background: linear-gradient(135deg, #ebe8e8 25%, transparent 25%) -20px 0, linear-gradient(225deg, #ebe8e8 25%, transparent 25%) -20px 0;
   background-size: 40px 40px;
   background-color: transparent;
 }
 
 .crcl {
-  background-color: #dbe9d8;
+  background-color: #fcd0c7;
 }
 
+/* gallery-jekyll*/
 .navbar {
-  background: #dbe9d8;
+  background: #e9c19a;
+  position: relative;
 }
 
 .navbar .navbar-toggler {
@@ -500,7 +630,7 @@ body {
 }
 
 .navbar .nav-item a {
-  color: #fff;
+  color: #ffffff;
   font-size: 1.2em;
   position: relative;
 }
@@ -537,33 +667,27 @@ body {
   top: 80%;
 }
 
-.zig-zag.header {
-  border: none;
-  position: relative;
-  top: -40px;
+.navbar:before, .navbar:after {
+  content: "";
+  position: absolute;
+  left: 0;
   right: 0;
+  bottom: -1.1em;
   height: 20px;
-  background: linear-gradient(135deg, #fff 25%, transparent 25%) -20px 0, linear-gradient(225deg, #fff 25%, transparent 25%) -20px 0, linear-gradient(315deg, rgba(255, 255, 255, 0) 25%, transparent 25%), linear-gradient(45deg, rgba(255, 255, 255, 0) 25%, transparent 25%);
+  background: linear-gradient(135deg, #ebe8e8 25%, transparent 25%) -20px 0, linear-gradient(225deg, #ebe8e8 25%, transparent 25%) -20px 0;
   background-size: 40px 40px;
   background-color: transparent;
   z-index: 2;
-  margin: 0;
 }
 
-.zig-zag.header-transparent {
-  border: none;
-  position: relative;
-  top: -40px;
-  right: 0;
+.navbar:after {
+  bottom: 0;
   height: 40px;
-  background: linear-gradient(315deg, #fff 25%, transparent 25%), linear-gradient(45deg, #fff 25%, transparent 25%);
+  background: linear-gradient(315deg, #ebe8e8 25%, transparent 25%), linear-gradient(45deg, #ebe8e8 25%, transparent 25%);
   background-size: 40px 40px;
-  background-color: transparent;
-  z-index: 2;
-  margin: 0;
 }
 
 footer {
-  background-color: #dddfd4;
+  background-color: #cfcccc;
 }
 /*# sourceMappingURL=style.css.map */
