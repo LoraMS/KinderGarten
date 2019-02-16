@@ -1,0 +1,34 @@
+@mixin zig-zag-separator($color1: #ffffff, $color2: #ffffff, $separator-color: #ffffff) {
+    background: linear-gradient(135deg, $color1 25%, transparent 25%) -20px 0,
+        linear-gradient(225deg, $color1 25%, transparent 25%) -20px 0,
+        linear-gradient(315deg, $color2 25%, transparent 25%),
+        linear-gradient(45deg, $color2 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-color: $separator-color;
+}
+
+@mixin title-border($top-before: 0%, $top-after: 0%){
+    font-size: 2rem;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: $top-before;
+        left: 47%;
+        height: 5px;
+        background: $text-color;
+        margin: 0 auto;
+        width: 7%;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: $top-after;
+        left: 42%;
+        height: 4px;
+        background: $text-color;
+        margin: 0 auto;
+        width: 17%;
+    }
+}
