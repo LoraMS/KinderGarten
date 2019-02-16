@@ -1,0 +1,22 @@
+<section class="gallery">
+    <div class="container">
+        <div class="title text-uppercase text-center">Our gallery</div>
+        <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-primary filter-button" data-filter="all">All</button>
+            <button type="button" class="btn btn-primary filter-button" data-filter="playground">Playground</button>
+            <button type="button" class="btn btn-primary filter-button" data-filter="classes">Classes</button>
+            <button type="button" class="btn btn-primary filter-button" data-filter="enjoyment">Enjoyment</button>
+        </div>
+        <div class="row">
+            {% for image in site.data.images %}
+                <div class="col-md-3 filter {{ image.data}}">
+                    <div class="img-container">
+                        <a href="{{ site.baseurl }}//assets/gallery/{{ image.link }}">
+                            <img src="{{ site.baseurl }}//assets/gallery/{{ image.name }}" class="img-thumbnail" alt="{{image.data}}">
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
