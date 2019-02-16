@@ -30,8 +30,6 @@ layout: site
   <section class="activities">
     <div class="container">
       <div class="title text-uppercase text-center">Our activities</div>
-      <hr class="separator-min">
-      <hr class="separator">
       <div class="row">
         <div class="col-md-3">
           <div class="activity text-center">
@@ -89,41 +87,45 @@ layout: site
     </div>
   </section>
   <hr class="zig-zag section-separator second" />
-  <section class="gallery">
-    <div class="container">
-      <div class="title text-uppercase text-center">Our gallery</div>
-      <hr class="separator-min">
-      <hr class="separator">
-      <div class="btn-group btn-group-lg">
-          <button type="button" class="btn btn-primary">All</button>
-          <button type="button" class="btn btn-primary">Playground</button>
-          <button type="button" class="btn btn-primary">Classes</button>
-          <button type="button" class="btn btn-primary">Enjoyment</button>
+  {% include gallery.html %}
+  <!-- <div class="galleryWrap">
+    <div class="pictureBox">
+        <div class="innerBox">
+            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
+            <div class="titleBox">Image 1</div>
         </div>
-      <div class="row">
-        <div class="col-md-3">
-          <div class="img-container">
-            <img src="./assets/gallery/4-thumb.jpg" class="img-thumbnail" alt="draw-class">
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="img-container">
-            <img src="./assets/gallery/4-thumb.jpg" class="img-thumbnail" alt="draw-class">
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="img-container">
-            <img src="./assets/gallery/4-thumb.jpg" class="img-thumbnail" alt="draw-class">
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="img-container">
-            <img src="./assets/gallery/4-thumb.jpg" class="img-thumbnail" alt="draw-class">
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
+    <div class="pictureBox">
+        <div class="innerBox">
+            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
+            <div class="titleBox">Image 2</div>
+        </div>
+    </div>
+    <div class="pictureBox">
+        <div class="innerBox">
+            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
+            <div class="titleBox">Image 3</div>
+        </div>
+    </div>
+    <div class="pictureBox">
+        <div class="innerBox">
+            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
+            <div class="titleBox">Image 5</div>
+        </div>
+    </div>
+    <div class="pictureBox">
+        <div class="innerBox">
+            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
+            <div class="titleBox">Image 6</div>
+        </div>
+    </div>
+</div> -->
+
+
+
+
+
+
   <hr class="zig-zag section-separator third" />
   <section class="crcl">
 
