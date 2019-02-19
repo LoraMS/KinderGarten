@@ -7,13 +7,14 @@
     background-color: $separator-color;
 }
 
-@mixin title-border($top-before: 0%, $top-after: 0%){
+@mixin title-border{
     font-size: 2rem;
+    position: relative;
 
     &::before {
         content: '';
         position: absolute;
-        top: $top-before;
+        top: 86%;
         left: 47%;
         height: 5px;
         background: $text-color;
@@ -24,7 +25,7 @@
     &::after {
         content: '';
         position: absolute;
-        top: $top-after;
+        top: 96%;
         left: 42%;
         height: 4px;
         background: $text-color;

@@ -5,8 +5,6 @@ layout: site
 <main>
   {% include slider.html %}
   <section class="welcome">
-    <hr class="zig-zag separator-transparent" />
-    <hr class="zig-zag separator-after-transparent" />
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -17,11 +15,39 @@ layout: site
           <h4>
             Starting with the new school year in our kindergarten
           </h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut abore et
-            dolore magna aliqua. Ut enim ad minim veniam. Nunc suscipit. Suspendisse enim arcu, convallis non, cursus
-            sed, dignissim aest. Aenean semper aliquet libero.
-          </p>
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-mission-tab" data-toggle="pill" href="#pills-mission" role="tab"
+                aria-controls="pills-mission" aria-selected="true">Mission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-vision-tab" data-toggle="pill" href="#pills-vision" role="tab"
+                aria-controls="pills-vision" aria-selected="false">Vision</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-objective-tab" data-toggle="pill" href="#pills-objective" role="tab"
+                aria-controls="pills-objective" aria-selected="false">Objective</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-mission" role="tabpanel" aria-labelledby="pills-mission-tab">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis aliquam neque. Phasellus eu
+              tincidunt magna, vel finibus erat. Praesent at velit id turpis ullamcorper convallis vel nec diam. Ut
+              aliquam consectetur mi id finibus. Nulla porta auctor nunc at vulputate. Phasellus eu
+              tincidunt magna, vel finibus erat. 
+            </div>
+            <div class="tab-pane fade" id="pills-vision" role="tabpanel" aria-labelledby="pills-vision-tab">
+              Ut ornare egestas accumsan. Nam luctus purus elementum nisl aliquet ornare. In hac habitasse platea
+              dictumst. Aliquam vitae leo rhoncus, sagittis turpis sed, cursus nibh. Ut congue quis turpis sollicitudin
+              cursus. Phasellus interdum consequat turpis at dignissim. Aliquam vitae leo rhoncus, sagittis turpis sed, cursus nibh quis turpis sollicitudin.
+            </div>
+            <div class="tab-pane fade" id="pills-objective" role="tabpanel" aria-labelledby="pills-objective-tab">
+              In sagittis laoreet lectus, et vulputate quam. Integer ornare id quam eget tincidunt. Phasellus aliquet
+              porttitor sagittis. Maecenas molestie egestas tristique. Aenean scelerisque nisl nulla, ac ullamcorper
+              lorem luctus ut. Morbi finibus velit id mollis porttitor. Donec molestie euismod facilisis. Integer ornare id quam eget tincidunt. Phasellus aliquet
+              porttitor sagittis.
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -50,7 +76,7 @@ layout: site
               <div class="border-icon"></div>
               <div><i class="fas fa-music"></i></div>
             </div>
-            <h5>Music lesson</h5>
+            <h5>Music Lesson</h5>
             <p>
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
               rem.
@@ -88,60 +114,63 @@ layout: site
   </section>
   <hr class="zig-zag section-separator second" />
   {% include gallery.html %}
-  <!-- <div class="galleryWrap">
-    <div class="pictureBox">
-        <div class="innerBox">
-            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
-            <div class="titleBox">Image 1</div>
-        </div>
-    </div>
-    <div class="pictureBox">
-        <div class="innerBox">
-            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
-            <div class="titleBox">Image 2</div>
-        </div>
-    </div>
-    <div class="pictureBox">
-        <div class="innerBox">
-            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
-            <div class="titleBox">Image 3</div>
-        </div>
-    </div>
-    <div class="pictureBox">
-        <div class="innerBox">
-            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
-            <div class="titleBox">Image 5</div>
-        </div>
-    </div>
-    <div class="pictureBox">
-        <div class="innerBox">
-            <img src="{{ site.baseurl }}/assets/gallery/4-thumb.jpg">
-            <div class="titleBox">Image 6</div>
-        </div>
-    </div>
-</div> -->
-
-
-
-
-
-
   <hr class="zig-zag section-separator third" />
-  <section class="crcl">
-
-      <div class="animate">
-          <div>Escape</div>
-          <div>
-            <span>into amazing experiences</span>
-          </div>
-        </div>
-
-
-    <br>
-    <div class="circle1">
-      <div class="border1"></div>
-      <div class="play"><i class="fa fa-play"></i>
+  <section class="testimonials">
+    <div class="container">
+      <div class="title text-uppercase text-center">What Parents Say</div>
+      <div class="row">
+          <div class="col-md-8 offset-md-2 col-10 offset-1 mt-5">
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner mt-4">
+                  <div class="carousel-item text-center active">
+                      <div class="img-box p-1 border rounded-circle m-auto">
+                          <img class="d-block w-100 rounded-circle" src="./assets/images/team07.jpg" alt="First slide">
+                      </div>
+                      <h5 class="mt-4 mb-0"><strong class="text-uppercase">Andrea Mitchel</strong></h5>
+                      <h6 class="m-0">Parent</h6>
+                      <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                  </div>
+                  <div class="carousel-item text-center">
+                      <div class="img-box p-1 border rounded-circle m-auto">
+                          <img class="d-block w-100 rounded-circle" src="./assets/images/testimonial1.jpg" alt="First slide">
+                      </div>
+                      <h5 class="mt-4 mb-0"><strong class="text-uppercase">Steve Fonsi</strong></h5>
+                      <h6 class="m-0">Parent</h6>
+                      <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                  </div>
+                  <div class="carousel-item text-center">
+                      <div class="img-box p-1 border rounded-circle m-auto">
+                          <img class="d-block w-100 rounded-circle" src="./assets/images/t3.jpg" alt="First slide">
+                      </div>
+                      <h5 class="mt-4 mb-0"><strong class="text-uppercase">Anne Vebar</strong></h5>
+                      <h6 class="m-0">Parent</h6>
+                      <p class="m-0 pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+          </div>            
       </div>
+
+
+
     </div>
   </section>
+
+
+  <!-- <section class="crcl">
+    <div class="animate">
+      <div>Escape</div>
+      <div>
+        <span>into amazing experiences</span>
+      </div>
+    </div>
+  </section> -->
 </main>

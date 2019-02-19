@@ -4,29 +4,80 @@ body {
     color: $text-color;
 }
 
-// slider style
-.carousel-caption {
-    right: auto;
-    left: 21%;
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.2);
-    top: 15%;
-    border-radius: 18px;
-    bottom: auto;
+.zig-zag.section-separator {
+    border: none;
+    height: 40px;
+    margin: 0;
 
-    .btn {
-        border-color: #fff;
-        color: #fff;
+    &.first {
+        @include zig-zag-separator($header-color, #fff, $separator-color);
+    }
+
+    &.second {
+        @include zig-zag-separator(#fff, $header-color, $separator-color);
+    }
+
+    &.third {
+        @include zig-zag-separator($header-color, #fff, $separator-color);
+    }
+
+    &.fourth {
+        @include zig-zag-separator(#fff, $footer-color, $separator-color);
+    }
+}
+
+// slider style
+.slider {
+    position: relative;
+
+    .carousel-caption {
+        right: auto;
+        left: 21%;
+        padding: 30px;
+        background: rgba(0, 0, 0, 0.2);
+        top: 15%;
+        border-radius: 18px;
+        bottom: auto;
+
+        .btn {
+            border-color: #fff;
+            color: #fff;
+        }
+    }
+
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1.1em;
+        height: 20px;
+        background: linear-gradient(135deg, $separator-color 25%, transparent 25%) -20px 0,
+            linear-gradient(225deg, $separator-color 25%, transparent 25%) -20px 0;
+        background-size: 40px 40px;
+        background-color: transparent;
+        z-index: 2;
+    }
+
+    &:after {
+        bottom: 0;
+        height: 40px;
+        background:
+            linear-gradient(315deg, $separator-color 25%, transparent 25%),
+            linear-gradient(45deg, $separator-color 25%, transparent 25%);
+        background-size: 40px 40px;
     }
 }
 
 // welcome style
 .welcome {
-    background-color: $body-color1;
+    // background-color: $body-color1;
+    background-color: $header-color;
     position: relative;
 
     .title {
-        @include title-border(18%, 19%);
+        @include title-border;
 
         &::before {
             left: 10%;
@@ -36,6 +87,28 @@ body {
         &::after {
             left: 2%;
             width: 28%;
+        }
+    }
+
+    ul {
+        li.nav-item {
+            a.nav-link {
+                color: $text-color;
+                background-color: #fff;
+                border-radius: 0%;
+
+                &:hover {
+                    background-color: #ddd;
+                }
+
+                &.active,
+                .show>.nav-link {
+                    color: #fff;
+                    background-color: #666666;
+
+                } 
+            }
+
         }
     }
 
@@ -51,38 +124,17 @@ body {
     }
 }
 
-.zig-zag.section-separator {
-    border: none;
-    height: 40px;
-    margin: 0;
-
-    &.first {
-        @include zig-zag-separator($body-color1, $body-color2, $separator-color);
-    }
-
-    &.second {
-        @include zig-zag-separator($body-color2, $body-color3, $separator-color);
-    }
-
-    &.third {
-        @include zig-zag-separator($body-color3, $body-color4, $separator-color);
-    }
-
-    &.fourth {
-        @include zig-zag-separator($body-color4, $footer-color, $separator-color);
-    }
-}
-
 // activities style
 .activities {
     padding: 50px 0;
     width: 100%;
     color: $text-color;
-    background-color: $body-color2;
+    // background-color: $body-color2;
     position: relative;
 
+
     .title {
-        @include title-border(18%, 19%);
+        @include title-border;
     }
 
     .activity {
@@ -90,6 +142,7 @@ body {
 
         h5 {
             padding: 0.8em 0;
+            color: $header-color;
         }
 
         .icon-container {
@@ -134,12 +187,13 @@ body {
 
 // gallery style
 .gallery {
-    background-color: $body-color3;
+    // background-color: $body-color3;
+    background-color: $header-color;
     padding: 50px 0;
     position: relative;
 
     .title {
-        @include title-border(11.5%, 12%);
+        @include title-border;
 
         &::after {
             left: 43%;
@@ -154,36 +208,122 @@ body {
         .btn {
             border: none;
             outline: none;
-            padding: 12px 16px;
             background-color: white;
             cursor: pointer;
             color: $text-color;
-          }
-          
-          /* Add a grey background color on mouse-over */
-          .btn:hover {
-            background-color: #ddd;
-          }
-          
-          /* Add a dark background color to the active button */
-          .btn.active {
-            background-color: #666;
-             color: white;
-          }
-    }
 
-    .img-container {
-        padding: 0.5em;
+            &:hover {
+                background-color: #ddd;
+            }
 
-        .img-thumbnail {
-            border: 2px solid white;
-            border-radius: 1.25rem;
+            &:focus,
+            &:active {
+                background-image: none;
+                outline: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
         }
 
+        .btn.current {
+            background-color: #666666;
+            color: white;
+        }
+    }
+
+    .filter {
+        padding: 0;
+
+        i {
+            color: #adb5bd;
+            font-size: 3rem;
+            visibility: hidden;
+            position: absolute;
+            top: 40%;
+            left: 45%;
+        }
+
+        .img-container {
+            margin: 0.5rem;
+            border: 4px solid white;
+            border-radius: 1.25rem;
+            overflow: hidden;
+
+            img {
+                max-width: 100%;
+                -moz-transition: transform 0.3s ease-in-out;
+                -webkit-transition: transform 0.3s ease-in-out;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &:hover img {
+                -moz-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+
+        }
+
+        &:hover .img-container {
+            opacity: 0.3;
+            filter: alpha(opacity=50);
+            /* For IE8 and earlier */
+        }
+
+        &:hover i {
+            visibility: visible;
+        }
     }
 }
 
+//testimonials style
+.testimonials {
+    background-image: url(./../assets/images/pattern.png);
 
+    .title {
+        @include title-border;
+    }
+
+    .carousel-inner {
+        .carousel-item .img-box {
+            width: 135px;
+            height: 135px;
+        }
+
+        h5 strong{
+            color: $header-color;
+        }
+
+    }
+
+    .carousel-control-prev-icon {
+        left: -100px;
+        color: $header-color;
+    }
+
+    .carousel-control-next {
+        right: -100px;
+        color: $header-color;
+    }
+
+    @media (min-width: 320px) and (max-width: 640px) {
+        .carousel-inner .carousel-item p {
+            font-size: 14px;
+        }
+
+        .carousel-control-prev {
+            left: -40px;
+        }
+
+        .carousel-control-next {
+            right: -40px;
+        }
+
+        .carousel-indicators {
+            top: 400px;
+        }
+    }
+}
 
 
 
@@ -285,76 +425,12 @@ body {
 
 }
 
-
-
-.circle1 {
-    width: 100px;
-    height: 100px;
-    position: relative;
-
-}
-
-.circle1 .border1 {
-    /* content: ''; */
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: transparent;
-    border-radius: 50%;
-    border: 2px dashed rgb(199, 49, 49);
-
-    &:hover {
-        animation: rotate 2s linear infinite;
-    }
-}
-
-.play {
-    padding: 20px 30px;
-    font-size: 56px;
-}
-
-
-
-.zig-zag.separator-transparent {
-    border: none;
-    position: relative;
-    top: -88px;
-    right: 0;
-    height: 40px;
-    background: linear-gradient(315deg, $separator-color 25%, transparent 25%), linear-gradient(45deg, $separator-color 25%, transparent 25%);
-    background-size: 40px 40px;
-    background-color: transparent;
-    z-index: 2;
-    // // maked with 4 linear gradients 
-    // background: linear-gradient(135deg, rgba(255, 255, 255, 01) 25%, transparent 25%) -20px 0,
-    // linear-gradient(225deg, rgba(255, 255, 255, 1) 25%, transparent 25%) -20px 0,
-    // linear-gradient(315deg, rgba(255, 255, 255, 1) 25%, transparent 25%),
-    // linear-gradient(45deg, rgba(255, 255, 255, 1) 25%, transparent 25%);
-}
-
-
-.zig-zag.separator-after-transparent {
-    border: none;
-    width: 100%;
-    margin: 0 auto;
-    position: relative;
-    top: -6.5em;
-    right: 0px;
-    height: 40px;
-    // maked with 4 linear gradients 
-    background: linear-gradient(135deg, $separator-color 25%, transparent 25%) -20px 0,
-        linear-gradient(225deg, $separator-color 25%, transparent 25%) -20px 0;
-    // linear-gradient(315deg, #fff 25%, transparent 25%),
-    // linear-gradient(45deg, #fff 25%, transparent 25%);
-    background-size: 40px 40px;
-    background-color: transparent;
-}
-
 .crcl {
-    background-color: $body-color4;
+    background-color: $header-color;
+    // background-image: url(./../assets/images/pattern.png);
 }
+
+
 
 /* gallery-jekyll*/
 
