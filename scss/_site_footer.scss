@@ -1,4 +1,106 @@
-footer{
+footer {
     background-color: $footer-color;
-    
+
+    .container {
+        padding-top: 2rem;
+        position: relative;
+
+        h4 {
+            &::after {
+                content: '';
+                width: 15%;
+                border-bottom: solid 3px $text-color;
+                position: absolute;
+                left: 5%;
+                top: 15%;
+            }
+        }
+
+        .address {
+            &>div {
+                padding: 0.65rem;
+            }
+        }
+
+        .social-icons {
+            a {
+                display: inline-block;
+                position: relative;
+                margin: 0.3rem;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                // border: 1.5px dashed $text-color;
+                text-align: center;
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.25rem;
+                background-color: transparent;
+
+                &.icoFacebook:hover {
+                    background-color: #3B5998;
+                }
+
+                &.icoTwitter:hover {
+                    background-color: #33ccff;
+                }
+
+                &.icoGoogle:hover {
+                    background-color: #BD3518;
+                }
+
+                &.icoYoutube:hover {
+                    background-color: #ed302f;
+                }
+
+                &.icoInstagram:hover {
+                    background-color: #41779f;
+                }
+
+                &.icoFacebook:hover i,
+                &.icoTwitter:hover i,
+                &.icoGoogle:hover i,
+                &.icoYoutube:hover i,
+                &.icoInstagram:hover i {
+                    color: #fff;
+                }
+
+
+                &:hover i {
+                    -moz-transform: rotate(360deg);
+                    -webkit-transform: rotate(360deg);
+                    -ms--transform: rotate(360deg);
+                    transform: rotate(360deg);
+                    -webkit-transition: all 0.2s;
+                    -moz-transition: all 0.2s;
+                    -o-transition: all 0.2s;
+                    -ms-transition: all 0.2s;
+                    transition: all 0.2s;
+                }
+
+                i {
+                    margin: 0;
+                    line-height: 3rem;
+                    text-align: center;
+                    color: $text-color;
+                    -webkit-transition: all 0.8s;
+                    -moz-transition: all 0.8s;
+                    -o-transition: all 0.8s;
+                    -ms-transition: all 0.8s;
+                    transition: all 0.8s;
+                }
+            }
+        }
+
+        form button{
+            background: transparent;
+            border: 1px solid $text-color;
+
+            &:hover{
+                background: rgb(255, 255, 255);
+                color: $text-color;
+                border: 1px solid $text-color;
+            }
+        }
+    }
 }
