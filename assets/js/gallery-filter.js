@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $('.filter-button').click(function () {
         var value = $(this).attr('data-filter');
+        console.log($(this));
 
         if (value === 'all') {
             $('.filter').show('1000');
@@ -10,9 +11,22 @@ $(document).ready(function () {
         }
     });
 
-    if ($('.filter-button').hasClass('active')) {
-        $(this).removeClass('active');
-    }
-    $(this).addClass("active");
+    // if ($('.filter-button').hasClass('current')) {
+    //     $(this).removeClass('current');
+    // }
+    // $(this).addClass('current');
+
+    // $('.btn-group').each( function( i, buttonGroup ) {
+    //     var $buttonGroup = $( buttonGroup );
+    //     $buttonGroup.on( 'click', 'button', function() {
+    //       $buttonGroup.find('.current').removeClass('current');
+    //       $( this ).addClass('current');
+    //     });
+    //   });
+
+    $('.btn-group').on( 'click', 'button', function() {
+        $('.btn-group').find('.current').removeClass('current');
+      $( this ).addClass('current');
+    });
 
 });
