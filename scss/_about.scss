@@ -1,0 +1,80 @@
+
+// welcome style
+.welcome {
+    // background-color: $header-color;
+    position: relative;
+  
+    .title {
+      // @include title-border;
+      // font-size: 1.5rem;
+    }
+  
+    ul {
+      li.nav-item {
+        a.nav-link {
+          color: $text-color;
+          background-color: #fff;
+          border-radius: 0%;
+  
+          &:hover {
+            background-color: #ddd;
+          }
+  
+          &.active,
+          .show>.nav-link {
+            color: #fff;
+            background-color: #666666;
+  
+          }
+        }
+  
+        &:first-of-type a {
+          border-top-left-radius: 0.3rem;
+          border-bottom-left-radius: 0.3rem;
+        }
+  
+        &:last-of-type a {
+          border-top-right-radius: 0.3rem;
+          border-bottom-right-radius: 0.3rem;
+        }
+  
+      }
+    }
+  
+    .bicylke {
+      max-width: 100%;
+  
+      &:hover {
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+      }
+    }
+  
+    button {
+      border: none;
+      background: transparent;
+      color: $text-color;
+  
+      &:hover {
+        background: #ffffff;
+        color: $text-color;
+      }
+  
+      &:hover:after {
+        visibility: hidden;
+      }
+  
+      &::after {
+        content: '';
+        position: absolute;
+        top: 87%;
+        left: 5%;
+        height: 4px;
+        background: $text-color;
+        margin: 0 auto;
+        width: 21%;
+      }
+    }
+  }
