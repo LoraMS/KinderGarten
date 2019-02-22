@@ -28,3 +28,9 @@
 - name: draw4.jpg
   data: enjoyment
   link: /draw4.html
+- name: 6-thumb.jpg
+  data: classes
+  link: /6-thumb.html
+- name: 7-thumb.jpg
+  data: playground
+  link: /7-thumb.html

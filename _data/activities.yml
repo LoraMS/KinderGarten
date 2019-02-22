@@ -1,0 +1,27 @@
+- icon: <i class="fas fa-palette"></i>
+  title: Painting
+  description: Children learn to paint
+- icon: <i class="fas fa-music"></i>
+  title: Music & Singing
+  description: Everybody loves child’s singing
+- icon: <i class="fas fa-horse"></i>
+  title: Puppet Centre
+  description: What you don’t have at home
+- icon: <i class="fas fa-futbol"></i>
+  title: Table/Floor Toys
+  description: What kind of toys your kid prefer?
+- icon: <i class="fas fa-tasks"></i>
+  title: Special Projects
+  description: Our secret area education ways
+- icon: <i class="fas fa-shapes"></i>
+  title: Sand Play
+  description: All year round we enjoy sand
+- icon: <i class="fas fa-book-reader"></i>
+  title: Library Reading
+  description: How many stories our teacher knows?
+- icon: <i class="fas fa-hat-wizard"></i>
+  title: Storytime
+  description: Where learning is a serious fun
+- icon: <i class="fas fa-swimming-pool"></i>
+  title: Water Play
+  description: Imagine various water activities
