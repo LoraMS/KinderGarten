@@ -1,7 +1,7 @@
-<section class="gallery hidden">
+<section class="gallery unhidden">
         <hr class="zig-zag section-separator second" />
     <div class="container">
-        <div class="title text-uppercase text-center">Our gallery</div>
+        <h3 class="title text-uppercase text-center">Our gallery</h3>
         <div class="btn-group btn-group-lg">
             <button type="button" class="btn btn-primary filter-button current" data-filter="all">All</button>
             <button type="button" class="btn btn-primary filter-button" data-filter="playground">Playground</button>
@@ -9,7 +9,7 @@
             <button type="button" class="btn btn-primary filter-button" data-filter="enjoyment">Enjoyment</button>
         </div>
         <div class="row">
-            {% for image in site.data.images %}
+            {% for image in site.data.gallery %}
                 <div class="col-md-3 filter {{ image.data}}">
                     <i class="fas fa-search-plus"></i>
                     <div class="img-container">
