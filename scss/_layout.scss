@@ -4,6 +4,11 @@ body {
   color: $text-color;
 }
 
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 .zig-zag.section-separator {
   border: none;
   height: 2.5rem;
@@ -25,6 +30,22 @@ body {
   &.fourth {
     @include zig-zag-separator(#fff, $footer-color, $separator-color);
     margin: 0;
+  }
+}
+
+.title {
+  @include title-border;
+}
+
+a.btn-link {
+  background: #8da187;
+  color: #fff;
+
+  &:hover {
+    background: #ffffff;
+    color: $text-color;
+    border: 1px solid gray;
+    text-decoration: none;
   }
 }
 
@@ -68,7 +89,7 @@ body {
   background-image: url("./../assets/images/pattern2.png");
 
   .title {
-    @include title-border;
+    margin-top: 5rem;
   }
 
   .card {
@@ -98,15 +119,10 @@ body {
   position: relative;
   line-height: 2rem;
 
-  .title {
-    @include title-border;
-  }
-
   .services-icon {
     max-width: 100%;
     padding-top: 3rem;
   }
-
 
   .service-card {
     position: relative;
@@ -169,6 +185,10 @@ body {
         // -ms-transform: translate(-50%, -50%);
         // transform: translate(-50%, -50%);
       }
+      a.btn{
+        border-color: #fff;
+        color: #fff;
+      }
     }
 
     &:hover .card-info {
@@ -185,14 +205,9 @@ body {
 
 // activities style
 .activities {
-  padding: 3rem 0;
   width: 100%;
   color: $text-color;
   position: relative;
-
-  .title {
-    @include title-border;
-  }
 
   .activity {
     margin-top: 2.5rem;
@@ -247,15 +262,6 @@ body {
 .gallery {
   background-color: $body-color;
   position: relative;
-
-  .title {
-    @include title-border;
-
-    &::after {
-      left: 43%;
-      width: 15%;
-    }
-  }
 
   .btn-group {
     margin-left: 20rem;
@@ -336,10 +342,6 @@ body {
 //testimonials style
 .testimonials {
   background-image: url(./../assets/images/pattern.png);
-
-  .title {
-    @include title-border;
-  }
 
   .carousel-inner {
     .carousel-item .img-box {

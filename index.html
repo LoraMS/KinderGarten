@@ -49,7 +49,7 @@ permalink: /
       </div>
     </div>
   </section>
-  <section class="services hidden">
+  <section class="services unhidden">
     <hr class="zig-zag section-separator second" />
     <div class="container">
       <h3 class="title text-uppercase text-center">Our Services</h3>
@@ -75,9 +75,10 @@ permalink: /
             <div class="card-info">
               <h3>Pre-School</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing ibu lum orci eget, viverra elit. Aliquam erat volut
-                pat phas ellus ac sodales felis tiam non.
+                Lorem ipsum dolor sit amet consectetur adipisicing ibu lum orci eget, viverra elit. 
+                <!-- Aliquam erat volut pat phas ellus ac sodales felis tiam non. -->
               </p>
+              <a href="{{site.baseurl}}/classes" class="btn btn-outline-secondary">Read more</a>
             </div>
           </div>
         </div>
@@ -87,9 +88,10 @@ permalink: /
             <div class="card-info">
               <h3>School Age</h3>
               <p>
-                Unde, corrupti autem veritatis dignissimos sunt in culpa qui officia deseru totarem aperiam, eaque ipsa
-                quae ab illo, vest ibulum.
+                Unde corrupti autem veritatis dignissimos culpa qui officia deseru totarem aperiam.
+                <!-- Eaque ipsa quae ab illo, vest ibulum. -->
               </p>
+              <a href="{{site.baseurl}}/classes" class="btn btn-outline-secondary">Read more</a>
             </div>
           </div>
         </div>
@@ -99,9 +101,10 @@ permalink: /
             <div class="card-info">
               <h3>Pre-Teen</h3>
               <p>
-                Dolor sit amet consectetur adipisicing elit. Felis tiam non metus Placerat a ultricies a, posuere lorem
-                ipseut lincas psuiem t volut pat phas ellus.
+                Dolor sit amet consectetur adipisicing elit. Felis tiam non metus placerat ultricies.
+                <!-- Posuere lorem ipseut lincas psuiem t volut pat phas ellus. -->
               </p>
+              <a href="{{site.baseurl}}/classes" class="btn btn-outline-secondary">Read more</a>
             </div>
           </div>
         </div>
@@ -111,9 +114,10 @@ permalink: /
             <div class="card-info">
               <h3>After School</h3>
               <p>
-                Itaque iusto quis quaerat impedit aspernatur vero. Orci eget usce mollis imperdiet interdum donec eget
-                metus auguen unc vel.
+                Itaque iusto quis quaerat impedit aspernatur vero. Orci eget usce mollis imperdiet.
+                <!-- Interdum donec eget metus auguen unc vel. -->
               </p>
+              <a href="{{site.baseurl}}/classes" class="btn btn-outline-secondary">Read more</a>
             </div>
           </div>
         </div>
@@ -123,7 +127,7 @@ permalink: /
   </section>
   <section class="activities hidden">
     <div class="container">
-      <div class="title text-uppercase text-center">Our activities</div>
+      <h3 class="title text-uppercase text-center">Our activities</h3>
       <div class="row">
         {% for activity in site.data.activities %}
         <div class="col-md-4">
@@ -151,7 +155,7 @@ permalink: /
   {% include gallery.html %}
   <section class="testimonials hidden">
     <div class="container">
-      <div class="title text-uppercase text-center">What Parents Say</div>
+      <h3 class="title text-uppercase text-center">What Parents Say</h3>
       <div class="row">
         <div class="col-md-8 offset-md-2 col-10 offset-1 mt-5">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">

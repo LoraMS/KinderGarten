@@ -191,6 +191,11 @@ body {
   color: #818181;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .zig-zag.section-separator {
   border: none;
   height: 2.5rem;
@@ -221,6 +226,45 @@ body {
   background-size: 1.25rem 2.5rem;
   background-color: #ffffff;
   margin: 0;
+}
+
+.title {
+  font-size: 2rem;
+  position: relative;
+}
+
+.title::before {
+  content: '';
+  position: absolute;
+  top: 86%;
+  left: 47%;
+  height: 5px;
+  background: #818181;
+  margin: 0 auto;
+  width: 7%;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  top: 96%;
+  left: 42%;
+  height: 4px;
+  background: #818181;
+  margin: 0 auto;
+  width: 17%;
+}
+
+a.btn-link {
+  background: #8da187;
+  color: #fff;
+}
+
+a.btn-link:hover {
+  background: #ffffff;
+  color: #818181;
+  border: 1px solid gray;
+  text-decoration: none;
 }
 
 .slider {
@@ -261,30 +305,7 @@ body {
 }
 
 .offer .title {
-  font-size: 2rem;
-  position: relative;
-}
-
-.offer .title::before {
-  content: '';
-  position: absolute;
-  top: 86%;
-  left: 47%;
-  height: 5px;
-  background: #818181;
-  margin: 0 auto;
-  width: 7%;
-}
-
-.offer .title::after {
-  content: '';
-  position: absolute;
-  top: 96%;
-  left: 42%;
-  height: 4px;
-  background: #818181;
-  margin: 0 auto;
-  width: 17%;
+  margin-top: 5rem;
 }
 
 .offer .card {
@@ -311,33 +332,6 @@ body {
   background-color: #aec5a5;
   position: relative;
   line-height: 2rem;
-}
-
-.services .title {
-  font-size: 2rem;
-  position: relative;
-}
-
-.services .title::before {
-  content: '';
-  position: absolute;
-  top: 86%;
-  left: 47%;
-  height: 5px;
-  background: #818181;
-  margin: 0 auto;
-  width: 7%;
-}
-
-.services .title::after {
-  content: '';
-  position: absolute;
-  top: 96%;
-  left: 42%;
-  height: 4px;
-  background: #818181;
-  margin: 0 auto;
-  width: 17%;
 }
 
 .services .services-icon {
@@ -388,42 +382,19 @@ body {
   text-align: center;
 }
 
+.services .service-card .card-info a.btn {
+  border-color: #fff;
+  color: #fff;
+}
+
 .services .service-card:hover .card-info {
   top: 0;
 }
 
 .activities {
-  padding: 3rem 0;
   width: 100%;
   color: #818181;
   position: relative;
-}
-
-.activities .title {
-  font-size: 2rem;
-  position: relative;
-}
-
-.activities .title::before {
-  content: '';
-  position: absolute;
-  top: 86%;
-  left: 47%;
-  height: 5px;
-  background: #818181;
-  margin: 0 auto;
-  width: 7%;
-}
-
-.activities .title::after {
-  content: '';
-  position: absolute;
-  top: 96%;
-  left: 42%;
-  height: 4px;
-  background: #818181;
-  margin: 0 auto;
-  width: 17%;
 }
 
 .activities .activity {
@@ -478,38 +449,6 @@ body {
 .gallery {
   background-color: #aec5a5;
   position: relative;
-}
-
-.gallery .title {
-  font-size: 2rem;
-  position: relative;
-}
-
-.gallery .title::before {
-  content: '';
-  position: absolute;
-  top: 86%;
-  left: 47%;
-  height: 5px;
-  background: #818181;
-  margin: 0 auto;
-  width: 7%;
-}
-
-.gallery .title::after {
-  content: '';
-  position: absolute;
-  top: 96%;
-  left: 42%;
-  height: 4px;
-  background: #818181;
-  margin: 0 auto;
-  width: 17%;
-}
-
-.gallery .title::after {
-  left: 43%;
-  width: 15%;
 }
 
 .gallery .btn-group {
@@ -588,33 +527,6 @@ body {
 
 .testimonials {
   background-image: url(./../assets/images/pattern.png);
-}
-
-.testimonials .title {
-  font-size: 2rem;
-  position: relative;
-}
-
-.testimonials .title::before {
-  content: '';
-  position: absolute;
-  top: 86%;
-  left: 47%;
-  height: 5px;
-  background: #818181;
-  margin: 0 auto;
-  width: 7%;
-}
-
-.testimonials .title::after {
-  content: '';
-  position: absolute;
-  top: 96%;
-  left: 42%;
-  height: 4px;
-  background: #818181;
-  margin: 0 auto;
-  width: 17%;
 }
 
 .testimonials .carousel-inner .carousel-item .img-box {
@@ -803,33 +715,8 @@ main .divs {
 .welcome {
   background: url("./../assets/images/pattern2.png");
   position: relative;
-}
-
-.welcome .title {
-  font-size: 2rem;
-  position: relative;
-}
-
-.welcome .title::before {
-  content: '';
-  position: absolute;
-  top: 86%;
-  left: 47%;
-  height: 5px;
-  background: #818181;
-  margin: 0 auto;
-  width: 7%;
-}
-
-.welcome .title::after {
-  content: '';
-  position: absolute;
-  top: 96%;
-  left: 42%;
-  height: 4px;
-  background: #818181;
-  margin: 0 auto;
-  width: 17%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .welcome ul li.nav-item a.nav-link {
@@ -845,7 +732,7 @@ main .divs {
 .welcome ul li.nav-item a.nav-link.active,
 .welcome ul li.nav-item a.nav-link .show > .nav-link {
   color: #fff;
-  background-color: #666666;
+  background-color: #8da187;
 }
 
 .welcome ul li.nav-item:first-of-type a {
@@ -869,15 +756,227 @@ main .divs {
   animation-iteration-count: 1;
 }
 
-.welcome button {
-  background: #666666;
+.classes {
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.classes .row {
+  padding: 1.875rem 0;
+}
+
+.classes .row .card {
+  border-radius: 10%;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-box-shadow: 0px 0px 0px 8px #eaeaea;
+  box-shadow: 0px 0px 0px 8px #eaeaea;
+  border: none;
+  padding: 0;
+}
+
+.classes .row .card:hover {
+  -webkit-box-shadow: 0px 0px 0px 12px #d6d6d6;
+  box-shadow: 0px 0px 0px 12px #d6d6d6;
+}
+
+.classes .row .card img {
+  max-width: 100%;
+  -webkit-border-top-left-radius: 14%;
+  -webkit-border-top-right-radius: 14%;
+  border-top-left-radius: 14%;
+  border-top-right-radius: 14%;
+}
+
+.classes .row .card .price-box {
+  position: absolute;
+  bottom: 11rem;
+  left: 1rem;
+}
+
+.classes .row .card .price-box .price {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.6rem;
+  z-index: 2;
   color: #fff;
 }
 
-.welcome button:hover {
+.classes .row .card .price-box .burst-12 {
+  background: #f0d5b5;
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  text-align: center;
+}
+
+.classes .row .card .price-box .burst-12:before, .classes .row .card .price-box .burst-12:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3rem;
+  width: 3rem;
+  background: #f0d5b5;
+}
+
+.classes .row .card .price-box .burst-12:before {
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.classes .row .card .price-box .burst-12:after {
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.teachers {
+  background: url("./../assets/images/pattern.png");
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+}
+
+.teachers .teacher {
+  border-radius: 10%;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
+  -webkit-box-shadow: 0px 0px 0px 8px #eaeaea;
+  box-shadow: 0px 0px 0px 8px #eaeaea;
+}
+
+.teachers .teacher:hover {
+  -webkit-box-shadow: 0px 0px 0px 12px #d6d6d6;
+  box-shadow: 0px 0px 0px 12px #d6d6d6;
+}
+
+.teachers .teacher .teacher-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.teachers .teacher .teacher-card img {
+  max-width: 100%;
+  -webkit-border-top-left-radius: 10%;
+  -webkit-border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+}
+
+.teachers .teacher .teacher-card .teacher-info {
+  padding: 2.5rem 1rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  -webkit-border-top-left-radius: 10%;
+  -webkit-border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  width: 100%;
+  -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+  transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+  top: 100%;
+}
+
+.teachers .teacher .teacher-card .teacher-info p {
+  text-align: center;
+}
+
+.teachers .teacher .teacher-card .teacher-info .teacher-social-icons a {
+  display: inline-block;
+  position: relative;
+  margin: 0.3rem;
+  border-radius: 50%;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.25rem;
+  background-color: transparent;
+}
+
+.teachers .teacher .teacher-card .teacher-info .teacher-social-icons a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.teachers .teacher .teacher-card .teacher-info .teacher-social-icons a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+.teachers .teacher .teacher-card .teacher-info .teacher-social-icons a.icoInstagram:hover {
+  background-color: #41779f;
+}
+
+.teachers .teacher .teacher-card .teacher-info .teacher-social-icons a.icoSkype:hover {
+  background-color: #00aff0;
+}
+
+.teachers .teacher .teacher-card .teacher-info .teacher-social-icons a i {
+  margin: 0;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.teachers .teacher .teacher-card:hover .teacher-info {
+  top: 0;
+}
+
+.contact-form {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.contact-form ul {
+  list-style-type: none;
+}
+
+.contact-form ul img {
+  max-width: 100%;
+}
+
+.contact-form ul .flex-item {
+  height: 2.5rem;
+}
+
+.contact-form ul .content {
+  height: 5rem;
+}
+
+.contact-form form button {
+  background: #8da187;
+  color: #fff;
+}
+
+.contact-form form button:hover {
   background: #ffffff;
   color: #818181;
   border: 1px solid gray;
+  text-decoration: none;
+}
+
+.contact-form form textarea {
+  line-height: 1.65;
+}
+
+.card {
+  padding: 0;
+}
+
+.card img {
+  max-width: 100%;
 }
 
 .navbar {
