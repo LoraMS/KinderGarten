@@ -1,0 +1,32 @@
+- image: teacher_1.jpg
+  name: Mary Moore
+  position: Director-Educator
+  info: Lorem ipsum dolor sit amet, consecteturadmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+- image: teacher_2.jpg
+  name: Alex Jhonson
+  position: Art Teacher-Staff
+  info: Lorem ipsum dolor sit amet, consecteturadmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+- image: teacher_3.jpg
+  name: Janaton Doe
+  position: Teacher-Educator
+  info: Lorem ipsum dolor sit amet, consecteturadmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+- image: teacher_4.jpg
+  name: Alice Bohm
+  position: Senior Educator-Staff
+  info: Lorem ipsum dolor sit amet, consecteturadmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+- image: teacher_5.jpg 
+  name: Amy Adams
+  position: Music Teacher-Staff
+  info: Lorem ipsum dolor sit amet, consecteturadmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+- image: teacher_6.jpg 
+  name: Julia Jameson
+  position: Teacher-Educator
+  info: Lorem ipsum dolor sit amet, consecteturadmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+- image: teacher_7.jpg 
+  name: Olivia Smith
+  position: Teacher-Educator
+  info: Lorem ipsum dolor sit amet, consecteturadmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+- image: teacher_8.jpg
+  name: Juditt Turner
+  position: Sport Teacher-Staff
+  info: Lorem ipsum dolor sit amet, consecteturadmodi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.

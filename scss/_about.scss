@@ -1,80 +1,214 @@
-
 // welcome style
 .welcome {
-    // background-color: $header-color;
-    position: relative;
-  
-    .title {
-      // @include title-border;
-      // font-size: 1.5rem;
-    }
-  
-    ul {
-      li.nav-item {
-        a.nav-link {
-          color: $text-color;
-          background-color: #fff;
-          border-radius: 0%;
-  
-          &:hover {
-            background-color: #ddd;
-          }
-  
-          &.active,
-          .show>.nav-link {
-            color: #fff;
-            background-color: #666666;
-  
-          }
-        }
-  
-        &:first-of-type a {
-          border-top-left-radius: 0.3rem;
-          border-bottom-left-radius: 0.3rem;
-        }
-  
-        &:last-of-type a {
-          border-top-right-radius: 0.3rem;
-          border-bottom-right-radius: 0.3rem;
-        }
-  
-      }
-    }
-  
-    .bicylke {
-      max-width: 100%;
-  
-      &:hover {
-        -webkit-animation: swing 1s ease;
-        animation: swing 1s ease;
-        -webkit-animation-iteration-count: 1;
-        animation-iteration-count: 1;
-      }
-    }
-  
-    button {
-      border: none;
-      background: transparent;
-      color: $text-color;
-  
-      &:hover {
-        background: #ffffff;
+  background: url("./../assets/images/pattern2.png");
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  ul {
+    li.nav-item {
+      a.nav-link {
         color: $text-color;
+        background-color: transparent;
+        border: none;
+
+        &:hover {
+          background-color: #ddd;
+        }
+
+        &.active,
+        .show>.nav-link {
+          color: #fff;
+          background-color: #8da187;
+
+        }
       }
-  
-      &:hover:after {
-        visibility: hidden;
+
+      &:first-of-type a {
+        border-top-left-radius: 0.3rem;
+        border-bottom-left-radius: 0.3rem;
       }
-  
-      &::after {
-        content: '';
+
+      &:last-of-type a {
+        border-top-right-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+      }
+
+    }
+  }
+
+  .bicylke {
+    max-width: 100%;
+
+    &:hover {
+      -webkit-animation: swing 1s ease;
+      animation: swing 1s ease;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+  }
+}
+
+//classes style
+.classes {
+  // background: url("./../assets/images/pattern2.png");
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+
+  .row {
+    padding: 1.875rem 0;
+
+    .card {
+      @include box-shadow;
+      border: none;
+      padding: 0;
+
+      img {
+        max-width: 100%;
+        -webkit-border-top-left-radius: 14%;
+        -webkit-border-top-right-radius: 14%;
+        border-top-left-radius: 14%;
+        border-top-right-radius: 14%;
+      }
+
+      .price-box {
         position: absolute;
-        top: 87%;
-        left: 5%;
-        height: 4px;
-        background: $text-color;
-        margin: 0 auto;
-        width: 21%;
+        bottom: 11rem;
+        left: 1rem;
+
+        .price {
+          position: absolute;
+          top: 0.6rem;
+          left: 0.6rem;
+          z-index: 2;
+          color: #fff;
+        }
+
+        .burst-12 {
+          background: #f0d5b5;
+          width: 3rem;
+          height: 3rem;
+          position: relative;
+          text-align: center;
+          // -webkit-animation: rotate 4s infinite linear;
+
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 3rem;
+            width: 3rem;
+            background: #f0d5b5;
+          }
+
+          &:before {
+            transform: rotate(30deg);
+          }
+
+          &:after {
+            transform: rotate(60deg);
+          }
+        }
       }
     }
   }
+}
+
+//teachers style
+.teachers {
+  background: url("./../assets/images/pattern.png");
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  position: relative;
+
+  .teacher {
+    @include box-shadow;
+
+    .teacher-card {
+      position: relative;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+        -webkit-border-top-left-radius: 10%;
+        -webkit-border-top-right-radius: 10%;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+      }
+
+      .teacher-info {
+        padding: 2.5rem 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        overflow: hidden;
+        text-align: center;
+        -webkit-border-top-left-radius: 10%;
+        -webkit-border-top-right-radius: 10%;
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        width: 100%;
+        -moz-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+        -webkit-transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+        transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+        top: 100%;
+
+        p {
+          text-align: center;
+        }
+
+        .teacher-social-icons {
+          a {
+            display: inline-block;
+            position: relative;
+            margin: 0.3rem;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            text-align: center;
+            width: 2rem;
+            height: 2rem;
+            font-size: 1.25rem;
+            background-color: transparent;
+
+            &.icoFacebook:hover {
+              background-color: #3B5998;
+            }
+
+            &.icoTwitter:hover {
+              background-color: #33ccff;
+            }
+
+            &.icoInstagram:hover {
+              background-color: #41779f;
+            }
+
+            &.icoSkype:hover {
+              background-color: #00aff0;
+            }
+
+            i {
+              margin: 0;
+              line-height: 2rem;
+              text-align: center;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      &:hover .teacher-info {
+        top: 0;
+      }
+    }
+  }
+}
