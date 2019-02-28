@@ -1,0 +1,39 @@
+// contact-form style
+.contact-form {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  ul {
+    list-style-type: none;
+
+    img {
+      max-width: 100%;
+    }
+
+    .flex-item {
+      height: 2.5rem;
+    }
+
+    .content {
+      height: 5rem;
+    }
+  }
+
+  form {
+    button {
+      background: #8da187;
+      color: #fff;
+
+      &:hover {
+        background: #ffffff;
+        color: $text-color;
+        border: 1px solid gray;
+        text-decoration: none;
+      }
+    }
+
+    textarea {
+      line-height: 1.65;
+    }
+  }
+}
