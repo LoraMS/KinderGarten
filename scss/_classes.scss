@@ -1,0 +1,68 @@
+.classes-list {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .row>div:nth-child(odd) .class-card {
+    background-color: $body-color;
+  }
+
+  .row>div:nth-child(even) .class-card {
+    background-color: $header-color;
+  }
+
+  .class-card {
+    padding: 1rem;
+    border: none;
+    -webkit-border-radius: 5%;
+    border-radius: 5%;
+    -webkit-transition: -webkit-box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    -webkit-box-shadow: 0px 0px 0px 8px rgb(234, 234, 234);
+    box-shadow: 0px 0px 0px 8px rgb(234, 234, 234);
+    color: #fff;
+
+    .class-image {
+      position: relative;
+      -webkit-border-radius: 5%;
+      border-radius: 5%;
+      background-color: rgb(255, 255, 255);
+
+      a {
+        display: none;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+      }
+
+      img {
+        max-width: 100%;
+        -webkit-border-radius: 5%;
+        border-radius: 5%;
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+      }
+
+      &:hover {
+        img {
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          /* For IE8 and earlier */
+        }
+
+        a {
+          display: block;
+        }
+      }
+    }
+
+    .class-info .badge{
+      background-color: rgb(250, 242, 137);
+    }
+
+    &:hover {
+      -webkit-box-shadow: 0px 0px 0px 12px rgb(214, 214, 214);
+      box-shadow: 0px 0px 0px 12px rgb(214, 214, 214);
+    }
+  }
+}

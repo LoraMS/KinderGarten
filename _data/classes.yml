@@ -1,0 +1,48 @@
+- image: classes2.jpg
+  name: Mathematic Classes
+  info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+  type: Basic
+  start: 20.04.2020
+  duration: 4 Months
+  size: 15 Kids
+  price: $50
+- image: draw2.jpg
+  name: Art Classes
+  info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+  type: Basic
+  start: 20.04.2020
+  duration: 4 Months
+  size: 15 Kids
+  price: $50
+- image: 8-thumb.jpg
+  name: Exploring Nature Classes
+  info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+  type: Basic
+  start: 20.04.2020
+  duration: 4 Months
+  size: 15 Kids
+  price: $50
+- image: play4.jpg
+  name: Sport Classes
+  info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+  type: Basic
+  start: 20.04.2020
+  duration: 4 Months
+  size: 15 Kids
+  price: $50
+- image: classes1.png
+  name: Music Classes
+  info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+  type: Basic
+  start: 20.04.2020
+  duration: 4 Months
+  size: 15 Kids
+  price: $50
+- image: classes3.jpg
+  name: Language Classes
+  info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
+  type: Basic
+  start: 20.04.2020
+  duration: 4 Months
+  size: 15 Kids
+  price: $50

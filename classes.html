@@ -1,0 +1,36 @@
+---
+layout: site
+title: Classes
+permalink: /classes/
+---
+
+<main>
+  <section class="classes-list unhidden">
+    <div class="container">
+      <h3 class="text-uppercase text-center title">Our Classes</h3>
+      <div class="row mt-3">
+        {% for class in site.data.classes %}
+        <div class="col-12 col-sm-12 col-md-4 mt-3 mb-3">
+          <div class="class-card">
+            <div class="class-image">
+              <img src="{{ site.baseurl }}/assets/gallery/{{ class.image }}" alt="classes">
+              <a href="#" class="btn btn-secondary btn-link">Read More</a>
+            </div>
+            <div class="class-info text-center">
+              <h6 class="text-uppercase mb-1">{{class.name}}</h6>
+              <div>Class Type: <span class="badge">{{class.type}}</span></div>
+              <p class="card-text text-center">{{class.info}}</p>
+              <div class="border-top pt-2">
+                <ul class="list-inline">
+                  <li class="list-inline-item border-right pr-3">Start: <span class="badge">{{class.start}}</span></li>
+                  <li class="list-inline-item">Duration: <span class="badge">{{class.duration}}</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>
