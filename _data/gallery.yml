@@ -1,5 +1,5 @@
 - name: 5-thumb.jpg
-  data: playground
+  data: class
   link: /5-thumb.html
 - name: 8-thumb.jpg
   data: playground
@@ -7,14 +7,14 @@
 - name: 9-thumb.jpg
   data: playground
   link: /9-thumb.html
-- name: classes1.jpg
-  data: classes
+- name: classes1.png
+  data: class
   link: /classes1.html
 - name: classes2.jpg
-  data: classes
+  data: class
   link: /classes2.html
 - name: classes3.jpg
-  data: classes
+  data: class
   link: /classes3.html
 - name: draw1.jpg
   data: enjoyment
@@ -25,11 +25,11 @@
 - name: draw3.jpg
   data: enjoyment
   link: /draw3.html
-- name: draw4.jpg
+- name: play4.jpg
   data: enjoyment
-  link: /draw4.html
+  link: /play4.html
 - name: 6-thumb.jpg
-  data: classes
+  data: playground
   link: /6-thumb.html
 - name: 7-thumb.jpg
   data: playground

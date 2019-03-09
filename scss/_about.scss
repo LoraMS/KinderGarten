@@ -88,12 +88,13 @@
         }
 
         .burst-12 {
-          background: #f0d5b5;
+          // background: #f0d5b5;
+          background: $body-color;
           width: 3rem;
           height: 3rem;
           position: relative;
           text-align: center;
-          // -webkit-animation: rotate 4s infinite linear;
+          // -webkit-animation: rotate 4s infinite linear;je
 
           &:before,
           &:after {
@@ -103,7 +104,8 @@
             left: 0;
             height: 3rem;
             width: 3rem;
-            background: #f0d5b5;
+            // background: #f0d5b5;
+             background: $body-color;
           }
 
           &:before {
@@ -114,6 +116,12 @@
             transform: rotate(60deg);
           }
         }
+      }
+
+      .card-body .badge{
+        color: #fff;
+        background-color: $body-color;
+        padding: 0.4rem;
       }
     }
   }
