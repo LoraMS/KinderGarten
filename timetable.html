@@ -7,6 +7,19 @@ permalink: /timetable/
     <section class="timetable">
         <div class="container">
             <h3 class="text-uppercase text-center title">Our Timetable</h3>
+            <div class="select-box">
+                <label for="select-box-label" class="label select-box-label"><span class="label-desc text-uppercase">All Classes</span>
+                </label>
+                <select id="select-box-label" class="filter-timetable">
+                    <option value="all">All Classes</option>
+                    <option value="math">Mathematics</option>
+                    <option value="languages">Languages</option>
+                    <option value="art">Art Classes</option>
+                    <option value="music">Music Classess</option>
+                    <option value="sport">Sport Classes</option>
+                    <option value="exploring">Exploring Nature</option>
+                </select>
+            </div>
             <table class="table table-bordered">
                 <thead>
                     <tr>
@@ -21,41 +34,41 @@ permalink: /timetable/
                 <tbody>
                     <tr>
                         <th scope="row">08:00</th>
-                        <td class="green">
+                        <td class="green" data-type="math">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Mathematics</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/mathematics">Mathematics</a></h6>
                                 <p>Learning numeracy</p>
                                 <h5>08:00 - 08:50</h5>
                                 <p>Children always love math classes</p>
                             </div>
                         </td>
-                        <td  class="pink">
+                        <td class="pink" data-type="art">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Art Class</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/art">Art Class</a></h6>
                                 <p>Drawing and Handmade</p>
                                 <h5>08:00 - 08:50</h5>
                                 <p>Teaching kids to express their creativity</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="exploring">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Exploring Nature</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/nature">Exploring Nature</a></h6>
                                 <p>Nature Study</p>
                                 <h5>08:00 - 08:50</h5>
                                 <p>First steps to understand the world</p>
                             </div>
                         </td>
-                        <td  class="pink">
+                        <td class="pink" data-type="sport">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Sport Activities</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/sport">Sport Activities</a></h6>
                                 <p>Physical activity</p>
                                 <h5>08:00 - 08:50</h5>
                                 <p>Becoming healthier and stronger</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="music">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Music Class</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/music">Music Class</a></h6>
                                 <p>Play and Sing</p>
                                 <h5>08:00 - 08:50</h5>
                                 <p>Playing and singing</p>
@@ -64,41 +77,41 @@ permalink: /timetable/
                     </tr>
                     <tr>
                         <th scope="row">09:00</th>
-                        <td  class="pink">
+                        <td class="pink" data-type="art">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Art Class</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/art">Art Class</a></h6>
                                 <p>Drawing and Handmade</p>
                                 <h5>09:00 - 09:50</h5>
                                 <p>Teaching kids to express their creativity</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="exploring">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Exploring Nature</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/nature">Exploring Nature</a></h6>
                                 <p>Nature Study</p>
                                 <h5>09:00 - 09:50</h5>
                                 <p>First steps to understand the world</p>
                             </div>
                         </td>
-                        <td  class="pink">
+                        <td class="pink" data-type="sport">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Sport Activities</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/sport">Sport Activities</a></h6>
                                 <p>Physical activity</p>
                                 <h5>09:00 - 09:50</h5>
                                 <p>Becoming healthier and stronger</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="music">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Music Class</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/music">Music Class</a></h6>
                                 <p>Play and Sing</p>
                                 <h5>09:00 - 09:50</h5>
                                 <p>Playing and singing</p>
                             </div>
                         </td>
-                        <td  class="pink">
+                        <td class="pink" data-type="languages">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Languages</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/language">Languages</a></h6>
                                 <p>Read and Write</p>
                                 <h5>09:00 - 09:50</h5>
                                 <p>This should know every child</p>
@@ -107,41 +120,41 @@ permalink: /timetable/
                     </tr>
                     <tr>
                         <th scope="row">10:00</th>
-                        <td class="green">
+                        <td class="green" data-type="exploring">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Exploring Nature</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/nature">Exploring Nature</a></h6>
                                 <p>Nature Study</p>
                                 <h5>10:00 - 10:50</h5>
                                 <p>First steps to understand the world</p>
                             </div>
                         </td>
-                        <td  class="pink">
+                        <td class="pink" data-type="sport">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Sport Activities</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/sport">Sport Activities</a></h6>
                                 <p>Physical activity</p>
                                 <h5>10:00 - 10:50</h5>
                                 <p>Becoming healthier and stronger</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="music">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Music Class</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/music">Music Class</a></h6>
                                 <p>Play and Sing</p>
                                 <h5>10:00 - 10:50</h5>
                                 <p>Playing and singing</p>
                             </div>
                         </td>
-                        <td  class="pink">
+                        <td class="pink" data-type="math">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Mathematics</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/mathematics">Mathematics</a></h6>
                                 <p>Learning numeracy</p>
                                 <h5>10:00 - 10:50</h5>
                                 <p>Children always love math classes</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="languages">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Languages</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/language">Languages</a></h6>
                                 <p>Read and Write</p>
                                 <h6>10:00 - 10:50</h6>
                                 <p>This should know every child</p>
@@ -150,41 +163,41 @@ permalink: /timetable/
                     </tr>
                     <tr>
                         <th scope="row">11:00</th>
-                        <td  class="pink">
+                        <td class="pink" data-type="sport">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Sport Activities</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/sport">Sport Activities</a></h6>
                                 <p>Physical activity</p>
                                 <h5>11:00 - 11:50</h5>
                                 <p>Becoming healthier and stronger</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="music">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Music Class</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/music">Music Class</a></h6>
                                 <p>Play and Sing</p>
                                 <h5>11:00 - 11:50</h5>
                                 <p>Playing and singing</p>
                             </div>
                         </td>
-                        <td  class="pink">
+                        <td class="pink" data-type="languages">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Languages</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/language">Languages</a></h6>
                                 <p>Read and Write</p>
                                 <h5>11:00 - 11:50</h5>
                                 <p>This should know every child</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="math">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Mathematics</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/mathematics">Mathematics</a></h6>
                                 <p>Learning numeracy</p>
                                 <h5>11:00 - 11:50</h5>
                                 <p>Children always love math classes</p>
                             </div>
                         </td>
-                        <td  class="pink">
+                        <td class="pink" data-type="art">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Art Class</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/art">Art Class</a></h6>
                                 <p>Drawing and Handmade</p>
                                 <h5>11:00 - 11:50</h5>
                                 <p>Teaching kids to express their creativity</p>
@@ -193,41 +206,41 @@ permalink: /timetable/
                     </tr>
                     <tr>
                         <th scope="row">12:00</th>
-                        <td class="green">
+                        <td class="green" data-type="music">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Music Class</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/music">Music Class</a></h6>
                                 <p>Play and Sing</p>
                                 <h5>12:00 - 12:50</h5>
                                 <p>Playing and singing</p>
                             </div>
                         </td>
-                        <td  class="pink">
+                        <td class="pink" data-type="languages">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Languages</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/language">Languages</a></h6>
                                 <p>Read and Write</p>
                                 <h5>12:00 - 12:50</h5>
                                 <p>This should know every child</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="math">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Mathematics</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/mathematics">Mathematics</a></h6>
                                 <p>Learning numeracy</p>
                                 <h5>12:00 - 12:50</h5>
                                 <p>Children always love math classes</p>
                             </div>
                         </td>
-                        <td class="pink">
+                        <td class="pink" data-type="art">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Art Class</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/art">Art Class</a></h6>
                                 <p>Drawing and Handmade</p>
                                 <h5>12:00 - 12:50</h5>
                                 <p>Teaching kids to express their creativity</p>
                             </div>
                         </td>
-                        <td class="green">
+                        <td class="green" data-type="exploring">
                             <div class="text-center">
-                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes">Exploring Nature</a></h6>
+                                <h6 class="text-uppercase"><a href="{{site.baseurl}}/classes/nature">Exploring Nature</a></h6>
                                 <p>Nature Study</p>
                                 <h5>12:00 - 12:50</h5>
                                 <p>First steps to understand the world</p>
