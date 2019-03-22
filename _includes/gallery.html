@@ -10,12 +10,12 @@
         </div>
         <div class="row">
             {% for image in site.data.gallery %}
-                <div class="col-md-3 filter {{ image.data}}">
+                <div class="col-12 col-sm-6 col-md-3 filter {{ image.data}}">
                     <i class="fas fa-search-plus"></i>
                     <div class="img-container">
-                        <a data-toggle="lightbox" data-gallery="example-gallery" href="{{ site.baseurl }}/assets/gallery/{{ image.name }}">
+                        <a data-toggle="lightbox" data-gallery="example-gallery" href="{{ site.baseurl }}/assets/images/gallery/{{ image.name }}">
                           <!-- data-fancybox="gallery"  -->
-                            <img src="{{ site.baseurl }}/assets/gallery/{{ image.name }}" alt="{{image.data}}">
+                            <img src="{{ site.baseurl }}/assets/images/gallery/{{ image.name }}" alt="{{image.data}}">
                         </a>
                     </div>
                 </div>

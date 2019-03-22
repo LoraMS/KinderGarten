@@ -1,0 +1,98 @@
+@media screen and (max-width: 1024px) {
+  .services .service-card {
+    h3 {
+      font-size: 1.4em;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  footer .container .social-icons a {
+    margin: 0;
+  }
+}
+
+// @media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+  .navbar .nav-item a:hover::after{
+    visibility: hidden;
+  }
+
+  .navbar .nav-item.active a::after{
+    visibility: hidden;
+  }
+
+  .carousel-caption p {
+    display: none;
+  }
+
+  .gallery .btn-group {
+    margin-left: 22%;
+  }
+
+  footer .container h4::after{
+    top: 10%;
+  }
+
+  footer .container .social-icons a {
+    margin: 0.625rem;
+  }
+}
+
+// @media screen and (max-width: 690px) {}
+
+@media screen and (max-width: 576px) {
+  .services .service-card p {
+    display: block;
+    line-height: 1.5rem;
+  }
+
+  .services .service-card {
+    margin-bottom: 2rem;
+  }
+
+  .gallery .btn-group {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider{
+    display: none;
+  }
+
+  .gallery .btn-group {
+    margin-left: 5%;
+  
+    button{
+      font-size: 1rem;
+    }
+  }
+
+  footer .container h4::after{
+    top: 15%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .gallery .btn-group {
+    margin-left: 0;
+  
+    button{
+      padding: 0.5rem 0.85rem;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header .navbar a.navbar-brand{
+    width: 70%;
+  }
+
+  .gallery .btn-group button{
+    padding: 0.5rem;
+  }
+}

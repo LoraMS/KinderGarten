@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/assets/images/logo.png" alt="logo">
+                <img src="{{ site.baseurl }}/assets/images/page/logo.png" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07"
                 aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,13 +13,10 @@
                     <li class="nav-item {% if page.url == '/' %}active{% endif %}">
                         <a class="nav-link" href="{{ site.baseurl }}/"><i class="fas fa-home"></i>Home</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="{{ site.baseurl }}/blog"><i class="far fa-comment-alt"></i>Blog</a>
-                    </li> -->
-                    <li class="nav-item">
+                    <li class="nav-item {% if page.url == '/classes/' %}active{% endif %}">
                         <a class="nav-link" href="{{ site.baseurl }}/classes"><i class="far fa-calendar-alt"></i>Classes</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {% if page.url == '/timetable/' %}active{% endif %}">
                         <a class="nav-link" href="{{ site.baseurl }}/timetable"><i class="fas fa-table"></i>Timetable</a>
                     </li>
                     <li class="nav-item {% if page.url == '/about/' %}active{% endif %}">
@@ -32,7 +29,4 @@
             </div>
         </div>
     </nav>
-    <!-- <div class="scallop-down slider"></div> -->
-    <!-- <hr class="zig-zag header-transparent"/>
-    <hr class="zig-zag header"/> -->
 </header>
