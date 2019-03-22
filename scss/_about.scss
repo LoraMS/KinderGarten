@@ -1,6 +1,6 @@
 // welcome style
 .welcome {
-  background: url("./../assets/images/pattern2.png");
+  background: url("./../assets/images/page/pattern2.png");
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -51,7 +51,6 @@
 
 //classes style
 .classes {
-  // background: url("./../assets/images/pattern2.png");
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
   padding-top: 5rem;
@@ -88,13 +87,11 @@
         }
 
         .burst-12 {
-          // background: #f0d5b5;
           background: $body-color;
           width: 3rem;
           height: 3rem;
           position: relative;
           text-align: center;
-          // -webkit-animation: rotate 4s infinite linear;je
 
           &:before,
           &:after {
@@ -104,7 +101,6 @@
             left: 0;
             height: 3rem;
             width: 3rem;
-            // background: #f0d5b5;
              background: $body-color;
           }
 
@@ -129,7 +125,7 @@
 
 //teachers style
 .teachers {
-  background: url("./../assets/images/pattern.png");
+  background: url("./../assets/images/page/pattern.png");
   padding-top: 5rem;
   padding-bottom: 5rem;
   position: relative;
