@@ -5,8 +5,8 @@ body {
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .zig-zag.section-separator {
@@ -86,7 +86,7 @@ a.btn-link {
 //offer style
 .offer {
   background-color: #ffffff;
-  background-image: url("./../assets/images/pattern2.png");
+  background-image: url("./../assets/images/page/pattern2.png");
 
   .title {
     margin-top: 5rem;
@@ -164,28 +164,11 @@ a.btn-link {
       transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
       top: 100%;
 
-      //  background: rgba(61, 57, 54, 0.5);
-      //  -moz-transition: all 0.4s ease-in-out 0s;
-      //  -webkit-transition: all 0.4s ease-in-out 0s;
-      //  -ms-transition: all 0.4s ease-in-out 0s;
-      //  transition: all 0.4s ease-in-out 0s;
-      // -moz-transform: translateY(100%);
-      // -webkit-transform: translateY(100%);
-      // -ms-transform: translateY(100%);
-      // transform: translateY(100%);
-      //   opacity: 0;
       p {
         text-align: center;
-        // display: inline-block;
-        // position: absolute;
-        // top: 50%;
-        // left: 50%;
-        // -moz-transform: translate(-50%, -50%);
-        // -webkit-transform: translate(-50%, -50%);
-        // -ms-transform: translate(-50%, -50%);
-        // transform: translate(-50%, -50%);
       }
-      a.btn{
+
+      a.btn {
         border-color: #fff;
         color: #fff;
       }
@@ -193,15 +176,9 @@ a.btn-link {
 
     &:hover .card-info {
       top: 0;
-      // opacity: 1;
-      // -moz-transform: translateY(0);
-      // -webkit-transform: translateY(0);
-      // -ms-transform: translateY(0);
-      // transform: translateY(0);
     }
   }
 }
-
 
 // activities style
 .activities {
@@ -264,7 +241,7 @@ a.btn-link {
   position: relative;
 
   .btn-group {
-    margin-left: 20rem;
+    margin-left: 32%;
     margin-top: 2rem;
 
     .btn {
@@ -323,7 +300,6 @@ a.btn-link {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
       }
-
     }
 
     &:hover .img-container {
@@ -341,7 +317,7 @@ a.btn-link {
 
 //testimonials style
 .testimonials {
-  background-image: url(./../assets/images/pattern.png);
+  background-image: url("./../assets/images/page/pattern.png");
 
   .carousel-inner {
     .carousel-item .img-box {
@@ -384,115 +360,16 @@ a.btn-link {
   }
 }
 
+//error page style
+.error-page {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
-
-
-
-.animate {
-  text-align: center;
-  color: #555;
-  font-size: 32px;
-  overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
-  -webkit-transform: translate3d(0, 0, 0);
-
-  div {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
+  img {
+    max-width: 100%;
   }
 
-  div:first-of-type {
-    /* For increasing performance 
-                             ID/Class should've been used. 
-                             For a small demo 
-                             it's okaish for now */
-    animation: showup 7s infinite;
+  .error-title {
+    font-size: 8rem;
   }
-
-  div:last-of-type {
-    width: 0px;
-    animation: reveal 7s infinite;
-  }
-
-  div:last-of-type span {
-    margin-left: -355px;
-    animation: slidein 7s infinite;
-  }
-
-  @keyframes showup {
-    0% {
-      opacity: 0;
-    }
-
-    20% {
-      opacity: 1;
-    }
-
-    80% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-    }
-  }
-
-  @keyframes slidein {
-    0% {
-      margin-left: -800px;
-    }
-
-    20% {
-      margin-left: -800px;
-    }
-
-    35% {
-      margin-left: 0px;
-    }
-
-    100% {
-      margin-left: 0px;
-    }
-  }
-
-  @keyframes reveal {
-    0% {
-      opacity: 0;
-      width: 0px;
-    }
-
-    20% {
-      opacity: 1;
-      width: 0px;
-    }
-
-    30% {
-      width: 355px;
-    }
-
-    80% {
-      opacity: 1;
-    }
-
-    100% {
-      opacity: 0;
-      width: 355px;
-    }
-  }
-
 }
-
-.crcl {
-  background-color: $header-color;
-  // background-image: url(./../assets/images/pattern.png);
-}
-
-main .divs
-{ 
-    margin:50px; 
-    padding:50px; 
-    background-color:pink; 
-}
-
