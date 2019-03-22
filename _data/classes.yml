@@ -1,5 +1,6 @@
 - image: classes2.jpg
   name: Mathematic Classes
+  link: /classes/mathematics
   info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
   type: Basic
   start: 20.04.2020
@@ -8,6 +9,7 @@
   price: $50
 - image: draw2.jpg
   name: Art Classes
+  link: /classes/art
   info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
   type: Basic
   start: 20.04.2020
@@ -16,6 +18,7 @@
   price: $50
 - image: 8-thumb.jpg
   name: Exploring Nature Classes
+  link: /classes/nature
   info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
   type: Basic
   start: 20.04.2020
@@ -24,6 +27,7 @@
   price: $50
 - image: play4.jpg
   name: Sport Classes
+  link: /classes/sport
   info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
   type: Basic
   start: 20.04.2020
@@ -32,6 +36,7 @@
   price: $50
 - image: classes1.png
   name: Music Classes
+  link: /classes/music
   info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
   type: Basic
   start: 20.04.2020
@@ -40,6 +45,7 @@
   price: $50
 - image: classes3.jpg
   name: Language Classes
+  link: /classes/language
   info: Ibu lum orci eget, viverra elit aliquam erat volut pat phas ellus.
   type: Basic
   start: 20.04.2020

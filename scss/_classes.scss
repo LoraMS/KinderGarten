@@ -32,6 +32,8 @@
         position: absolute;
         top: 30%;
         left: 30%;
+        background-color: #fff;
+        color: $text-color;
       }
 
       img {
@@ -56,8 +58,9 @@
       }
     }
 
-    .class-info .badge{
-      background-color: rgb(250, 242, 137);
+    .class-info .badge {
+      background-color: rgb(224, 224, 224);
+      border: 1px solid rgb(236, 236, 236);
     }
 
     &:hover {
