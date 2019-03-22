@@ -1,0 +1,54 @@
+.classes-details {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    section {
+        float: left;
+        margin: 0 1.5%;
+        width: 63%;
+
+        img {
+            max-width: 100%;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+    }
+
+    aside {
+        float: right;
+        margin: 0 1.5%;
+        width: 30%;
+
+        h3{
+            margin-top: 2rem;
+        }
+
+        .card i {
+            color: #8baf7d;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                padding-top: 1rem;
+
+                div {
+                    width: 40%;
+
+                    a img {
+                        max-width: 100%;
+                    }
+                }
+
+                p {
+                    width: 60%;
+                }
+            }
+
+        }
+    }
+
+}
