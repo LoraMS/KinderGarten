@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    {% include header.html %}
+    <main>
+        <div class="classes-details unhidden">
+            <div class="container clearfix">
+                <h3 class="text-uppercase text-center title">{{page.title}} Classes</h3>
+                <section>
+                    <img src="{{site.baseurl}}{{page.image}}" alt="math">
+                    <div class="content border">
+                        {{ content }}
+                    </div>
+                </section>
+                <aside>
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item clearfix">
+                                <span class="float-left w-50"><i class="fas fa-tasks"></i>Class Type</span>
+                                <span class="float-left w-50">{{page.type}}</span>
+                            </li>
+                            <li class="list-group-item clerfix">
+                                <span class="float-left w-50"><i class="fas fa-pencil-ruler"></i>Start Date</span>
+                                <span class="float-left w-50">{{page.start}}</span>
+                            </li>
+                            <li class="list-group-item clerfix">
+                                <span class="float-left w-50"><i class="fas fa-user-graduate"></i>Years Old</span>
+                                <span class="float-left w-50">{{page.years}} Age</span>
+                            </li>
+                            <li class="list-group-item clerfix">
+                                <span class="float-left w-50"><i class="fas fa-cubes"></i>Class Size</span>
+                                <span class="float-left w-50">{{page.size}} Kids</span>
+                            </li>
+                            <li class="list-group-item clerfix">
+                                <span class="float-left w-50"><i class="fas fa-calendar-alt"></i> Class Duration</span>
+                                <span class="float-left w-50">{{page.duration}} Months</span>
+                            </li>
+                            <li class="list-group-item clearfix">
+                                <span class="float-left w-50"><i class="fas fa-money-bill"></i>Price</span>
+                                <span class="float-left w-50">$ {{page.price}}.00 </span>
+                            </li>
+                            <li class="list-group-item clearfix">
+                                <span class="float-left w-50"><i class="fas fa-thumbs-up"></i>Rating</span>
+                                <span class="float-left w-50">
+                                    <img src="{{ site.baseurl }}/assets/images/page/rating2.png" alt="">
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h3>Popular Classes</h3>
+                    <ul>
+                        {% for class in site.data.classes limit:4 %}
+                        <li class="clearfix border-bottom">
+                            <div class="float-left">
+                                <a href="{{ site.baseurl }}{{ class.link }}">
+                                    <img src="{{ site.baseurl }}/assets/images/gallery/{{ class.image }}" alt="classes">
+                                </a>
+                            </div>
+                            <p class="float-left pl-3">
+                                Foulate revlunry and the mihare are a awesome the theme.
+                                <span class="d-block">20 April 2020</span>
+                            </p>
+
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </main>
+    <hr class="zig-zag section-separator fourth">
+    {% include footer.html %}
+</body>
+
+</html>
