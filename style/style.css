@@ -721,6 +721,7 @@ a.btn-link:hover {
   transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
   -webkit-box-shadow: 0px 0px 0px 8px #eaeaea;
   box-shadow: 0px 0px 0px 8px #eaeaea;
+  max-width: 330px;
 }
 
 .teachers .teacher:hover {
@@ -764,6 +765,14 @@ a.btn-link:hover {
 
 .teachers .teacher .teacher-card .teacher-info p {
   text-align: center;
+}
+
+.teachers .teacher .teacher-card .teacher-info p:first-of-type {
+  margin-bottom: 0;
+}
+
+.teachers .teacher .teacher-card .teacher-info p:last-of-type {
+  margin-top: 0;
 }
 
 .teachers .teacher .teacher-card .teacher-info .teacher-social-icons a {
@@ -899,6 +908,11 @@ a.btn-link:hover {
 
 .classes-list .class-card .class-image:hover a {
   display: block;
+}
+
+.classes-list .class-card .class-info ul li:first-of-type {
+  border-right: 1px solid #dee2e6;
+  padding-right: 0.625rem;
 }
 
 .classes-list .class-card .class-info .badge {
@@ -1053,6 +1067,30 @@ a.btn-link:hover {
 
 .timetable table tbody .pink {
   background-color: #e9c19a;
+}
+
+.timetable .small-timetable {
+  display: none;
+}
+
+.timetable .small-timetable ul {
+  border-bottom: 1px solid gray;
+  padding-bottom: 2rem;
+}
+
+.timetable .small-timetable ul li.line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.timetable .small-timetable ul li:nth-child(odd) {
+  background-color: #e9c19a;
+}
+
+.timetable .small-timetable ul li div a {
+  color: #818181;
+  font-weight: normal;
 }
 
 .navbar {
@@ -1217,6 +1255,12 @@ footer .container form button:hover {
   .services .service-card p {
     display: none;
   }
+  .classes-list .class-card .class-info ul li:first-of-type {
+    border: none;
+  }
+  .teachers .teacher .teacher-card .teacher-info p:last-of-type {
+    display: none;
+  }
   footer .container .social-icons a {
     margin: 0;
   }
@@ -1235,11 +1279,22 @@ footer .container form button:hover {
   .gallery .btn-group {
     margin-left: 22%;
   }
+  .classes-details section,
+  .classes-details aside {
+    float: none;
+    width: 100%;
+  }
+  .timetable .table {
+    display: none;
+  }
+  .timetable .small-timetable {
+    display: block;
+  }
   footer .container h4::after {
     top: 10%;
   }
   footer .container .social-icons a {
-    margin: 0.625rem;
+    margin: 0.5rem;
   }
 }
 
@@ -1253,6 +1308,21 @@ footer .container form button:hover {
   }
   .gallery .btn-group {
     margin-left: 10%;
+  }
+  .welcome .bicylke {
+    display: none;
+  }
+  .classes .row .card .price-box {
+    bottom: 9.5rem;
+  }
+  .classes .row div:first-of-type .card .price-box {
+    bottom: 11rem;
+  }
+  .classes-list .class-card .class-info ul li:first-of-type {
+    border-right: 1px solid #e4e4e4;
+  }
+  .teachers .teacher .teacher-card .teacher-info p:last-of-type {
+    display: block;
   }
 }
 
@@ -1278,6 +1348,9 @@ footer .container form button:hover {
   .gallery .btn-group button {
     padding: 0.5rem 0.85rem;
   }
+  .classes .row .card .price-box {
+    bottom: 11rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -1286,6 +1359,9 @@ footer .container form button:hover {
   }
   .gallery .btn-group button {
     padding: 0.5rem;
+  }
+  .classes-list .class-card .class-info ul li:first-of-type {
+    border: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

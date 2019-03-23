@@ -9,6 +9,14 @@
     }
   }
 
+  .classes-list .class-card .class-info ul li:first-of-type {
+    border: none;
+  }
+
+  .teachers .teacher .teacher-card .teacher-info p:last-of-type {
+    display: none;
+  }
+
   footer .container .social-icons a {
     margin: 0;
   }
@@ -17,11 +25,11 @@
 // @media screen and (max-width: 992px) {}
 
 @media screen and (max-width: 768px) {
-  .navbar .nav-item a:hover::after{
+  .navbar .nav-item a:hover::after {
     visibility: hidden;
   }
 
-  .navbar .nav-item.active a::after{
+  .navbar .nav-item.active a::after {
     visibility: hidden;
   }
 
@@ -33,12 +41,28 @@
     margin-left: 22%;
   }
 
-  footer .container h4::after{
+  .classes-details section,
+  .classes-details aside {
+    float: none;
+    width: 100%;
+  }
+
+  .timetable {
+    .table {
+      display: none;
+    }
+
+    .small-timetable {
+      display: block;
+    }
+  }
+
+  footer .container h4::after {
     top: 10%;
   }
 
   footer .container .social-icons a {
-    margin: 0.625rem;
+    margin: 0.5rem;
   }
 }
 
@@ -57,22 +81,42 @@
   .gallery .btn-group {
     margin-left: 10%;
   }
+
+  .welcome .bicylke {
+    display: none;
+  }
+
+  .classes .row .card .price-box {
+    bottom: 9.5rem;
+  }
+
+  .classes .row div:first-of-type .card .price-box {
+    bottom: 11rem;
+  }
+
+  .classes-list .class-card .class-info ul li:first-of-type {
+    border-right: 1px solid rgb(228, 228, 228);
+  }
+
+  .teachers .teacher .teacher-card .teacher-info p:last-of-type {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .slider{
+  .slider {
     display: none;
   }
 
   .gallery .btn-group {
     margin-left: 5%;
-  
-    button{
+
+    button {
       font-size: 1rem;
     }
   }
 
-  footer .container h4::after{
+  footer .container h4::after {
     top: 15%;
   }
 }
@@ -80,19 +124,28 @@
 @media screen and (max-width: 375px) {
   .gallery .btn-group {
     margin-left: 0;
-  
-    button{
+
+    button {
       padding: 0.5rem 0.85rem;
     }
   }
+
+  .classes .row .card .price-box {
+    bottom: 11rem;
+  }
+
 }
 
 @media screen and (max-width: 320px) {
-  header .navbar a.navbar-brand{
+  header .navbar a.navbar-brand {
     width: 70%;
   }
 
-  .gallery .btn-group button{
+  .gallery .btn-group button {
     padding: 0.5rem;
+  }
+
+  .classes-list .class-card .class-info ul li:first-of-type {
+    border: none;
   }
 }
