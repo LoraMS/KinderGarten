@@ -20,7 +20,7 @@ $(document).ready(function () {
   $(".filter-timetable").change(function () {
     let filterValue = $(this).val();
     let row = $('td');
-
+    
     row.css('visibility', 'hidden');
     row.each(function (i, el) {
       if ($(el).attr('data-type') == filterValue) {
@@ -29,6 +29,17 @@ $(document).ready(function () {
     });
     if ("all" == filterValue) {
       row.css('visibility', 'visible');
+    }
+
+    let line = $('.line');
+    line.hide();
+    line.each(function (i, el) {
+      if ($(el).attr('data-type') === filterValue) {
+        $(el).show();
+      }
+    });
+    if (filterValue === "all") {
+      line.show();
     }
   });
 });
