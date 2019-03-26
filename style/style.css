@@ -1266,18 +1266,24 @@ footer .container form button:hover {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
   .navbar .nav-item a:hover::after {
     visibility: hidden;
   }
   .navbar .nav-item.active a::after {
     visibility: hidden;
   }
-  .carousel-caption p {
-    display: none;
-  }
   .gallery .btn-group {
     margin-left: 22%;
+  }
+  footer .container .social-icons a {
+    margin: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-caption p {
+    display: none;
   }
   .classes-details section,
   .classes-details aside {
@@ -1293,18 +1299,11 @@ footer .container form button:hover {
   footer .container h4::after {
     top: 10%;
   }
-  footer .container .social-icons a {
-    margin: 0.5rem;
-  }
 }
 
-@media screen and (max-width: 576px) {
-  .services .service-card p {
-    display: block;
-    line-height: 1.5rem;
-  }
-  .services .service-card {
-    margin-bottom: 2rem;
+@media screen and (max-width: 640px) {
+  .slider {
+    display: none;
   }
   .gallery .btn-group {
     margin-left: 10%;
@@ -1321,15 +1320,22 @@ footer .container form button:hover {
   .classes-list .class-card .class-info ul li:first-of-type {
     border-right: 1px solid #e4e4e4;
   }
+  .services .service-card {
+    margin-bottom: 2rem;
+  }
+  .services .service-card p {
+    display: block;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .teachers .teacher .teacher-card .teacher-info p:last-of-type {
     display: block;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .slider {
-    display: none;
-  }
   .gallery .btn-group {
     margin-left: 5%;
   }
